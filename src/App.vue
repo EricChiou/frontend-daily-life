@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>&nbsp;|
-      <router-link to="/about">About</router-link>
+    <Menu></Menu>
+    <div class="main">
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
+
+<script>
+import Menu from './views/Menu.vue';
+
+export default {
+  components: {
+    Menu
+  }
+};
+</script>
+
 
 <style lang="scss">
 html,
@@ -15,19 +25,16 @@ body {
   padding: 0;
 }
 #app {
-  font-family: sans-serif, Microsoft JhengHei;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+  font-family: Helvetica, Arial, Sans-Serif, Microsoft JhengHei;
+  .main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 400px;
+    @media only screen and (max-width: 767px) {
+      top: 300px;
+      left: 0;
     }
   }
 }
