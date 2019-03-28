@@ -4,16 +4,18 @@
       <div class="first-line">Frontend</div>
       <div class="second-line">Daily Life</div>
     </div>
-    <div class="description">記錄我在前端遇到的大小事及心得，並推薦一些好用的網站。</div>
+    <div class="description">記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。</div>
     <MenuList></MenuList>
+    <MenuFooter></MenuFooter>
   </div>
 </template>
 
 <script>
 import MenuList from '../components/MenuList.vue';
+import MenuFooter from '../components/MenuFooter.vue';
 
 export default {
-  components: { MenuList }
+  components: { MenuList, MenuFooter }
 };
 </script>
 
@@ -47,7 +49,7 @@ export default {
     right: 0;
     bottom: initial;
     width: initial;
-    height: 300px;
+    height: 380px;
     .title {
       width: 300px;
       max-width: calc(90vw);

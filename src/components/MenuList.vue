@@ -6,6 +6,7 @@
       <li>React</li>
       <li>Vue</li>
       <li>UI Design</li>
+      <li>相關技術</li>
       <li>推薦網站</li>
     </ul>
   </div>
@@ -24,7 +25,7 @@ export default {};
       padding: 5px 5px;
       font-size: 20px;
       list-style-type: square;
-      cursor: pointer;  
+      cursor: pointer;
       &:hover {
         background-color: #3a4750;
       }
