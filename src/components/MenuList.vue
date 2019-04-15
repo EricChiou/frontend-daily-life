@@ -1,11 +1,10 @@
 <template>
   <div id="menu-list-container">
     <ul>
-      <li>前端趨勢</li>
+      <li>前端技術</li>
       <li>Angular</li>
       <li>React</li>
       <li>Vue</li>
-      <li>UI Design</li>
       <li>相關技術</li>
       <li>推薦網站</li>
     </ul>

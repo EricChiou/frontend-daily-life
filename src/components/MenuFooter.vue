@@ -1,9 +1,11 @@
 <template>
   <div id="menu-footer-container">
     <ul>
-      <li>About</li>
+      <router-link to="/about">
+        <li>關於我</li>
+      </router-link>
       <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-      <li>Entrance</li>
+      <li>入口網站</li>
       <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <li>
         <img src="../assets/images/github.png" width="20" height="20">Github
@@ -28,6 +30,9 @@ export default {};
   ul {
     margin: 15px 0;
     padding: 0;
+    a {
+      color: #aaaaaa;
+    }
     li {
       display: inline-block;
       cursor: pointer;
