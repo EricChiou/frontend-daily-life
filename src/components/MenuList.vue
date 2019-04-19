@@ -1,7 +1,9 @@
 <template>
   <div id="menu-list-container">
     <ul>
-      <li>前端技術</li>
+      <router-link to="/frontend-tech">
+        <li>前端技術</li>
+      </router-link>
       <li>Angular</li>
       <li>React</li>
       <li>Vue</li>
@@ -19,6 +21,10 @@ export default {};
 #menu-list-container {
   margin: 0 10px;
   ul {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
     li {
       margin: 5px 56px;
       padding: 5px 5px;

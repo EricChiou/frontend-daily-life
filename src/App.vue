@@ -33,8 +33,7 @@ body {
     bottom: 0;
     left: 400px;
     @media only screen and (max-width: 767px) {
-      top: 380px;
-      left: 0;
+      position: initial;
     }
   }
 }

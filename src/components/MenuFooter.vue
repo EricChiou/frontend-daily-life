@@ -5,10 +5,14 @@
         <li>關於我</li>
       </router-link>
       <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-      <li>入口網站</li>
+      <li>
+        <a href="http://www.calicomoo.ml/entrance/">入口網站</a>
+      </li>
       <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <li>
-        <img src="../assets/images/github.png" width="20" height="20">Github
+        <a href="https://github.com/EricChiou/frontend-daily-life" target="_blank">
+          <img src="../assets/images/github.png" width="20" height="20">Github
+        </a>
       </li>
     </ul>
   </div>
@@ -32,6 +36,7 @@ export default {};
     padding: 0;
     a {
       color: #aaaaaa;
+      text-decoration: none;
     }
     li {
       display: inline-block;

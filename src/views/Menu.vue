@@ -46,14 +46,14 @@ export default {
     color: #aaaaaa;
   }
   @media only screen and (max-width: 767px) {
-    right: 0;
-    bottom: initial;
-    width: initial;
+    position: relative;
+    width: 100%;
     height: 380px;
     .title {
       width: 300px;
       max-width: calc(90vw);
-      margin: 20px 5vw 0 5vw;
+      margin: 0 5vw;
+      padding-top: 20px;
       font-size: 40px;
       font-weight: bold;
       font-style: italic;
