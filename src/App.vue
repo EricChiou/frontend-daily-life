@@ -24,6 +24,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 #app {
   font-family: Helvetica, Arial, Sans-Serif, Microsoft JhengHei;
   .main {
@@ -32,6 +35,7 @@ body {
     right: 0;
     bottom: 0;
     left: 400px;
+    overflow: auto;
     @media only screen and (max-width: 767px) {
       position: initial;
     }

@@ -3,7 +3,8 @@ import Router from 'vue-router';
 
 import Home from './views/Home.vue';
 import About from './views/About.vue';
-import FrontendTech from './views/FrontendTech.vue';
+import Frontend from './views/Frontend.vue';
+import FrontendTrend from './views/article/frontend/FrontendTrend.vue';
 
 Vue.use(Router);
 
@@ -26,9 +27,14 @@ export default new Router({
       component: About
     },
     {
-      path: '/frontend-tech',
-      name: 'frontendTech',
-      component: FrontendTech
+      path: '/frontend',
+      name: 'frontend',
+      component: Frontend
+    },
+    {
+      path: '/frontend/frontend-trend',
+      name: 'frontend-trend',
+      component: FrontendTrend
     }
   ]
 });

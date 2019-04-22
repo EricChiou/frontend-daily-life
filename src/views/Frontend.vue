@@ -1,12 +1,14 @@
 <template>
-  <div id="frontend-tech-container">
-    <div class="title">前端技術</div>
+  <div id="frontend-container">
+    <div class="title">前端</div>
     <div class="sub-title">文章列表</div>
-    <div class="article" v-for="content in article" :key="content.link">
-      <h4>{{content.title}}</h4>
-      <div class="date">{{content.date}}</div>
-      <div class="summary">{{content.summary}}</div>
-    </div>
+    <router-link v-for="content in article" :key="content.link" :to="content.link">
+      <div class="article">
+        <h4>{{content.title}}</h4>
+        <div class="date">{{content.date}}</div>
+        <div class="summary">{{content.summary}}</div>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -15,11 +17,11 @@ export default {
   data: () => ({
     article: [
       {
-        title: '前端趨勢探討',
+        title: '前端發展',
         date: '2019 / 04 / 19',
         summary:
-          '討論前端發展趨勢，以及對目前主流的三大框架 React、Angular 及 Vue 之間做些簡單的對比和使用心得。',
-        link: ''
+          '討論前端發展趨勢，以及對目前主流的三大框架 React、Angular2 及 Vue 之間做些簡單的對比和使用心得。',
+        link: '/frontend/frontend-trend'
       }
     ]
   })
@@ -27,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#frontend-tech-container {
+#frontend-container {
   .title,
   .sub-title {
     color: #3a4750;

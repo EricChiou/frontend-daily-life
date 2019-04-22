@@ -1,8 +1,8 @@
 <template>
   <div id="menu-list-container">
     <ul>
-      <router-link to="/frontend-tech">
-        <li>前端技術</li>
+      <router-link to="/frontend">
+        <li>前端</li>
       </router-link>
       <li>Angular</li>
       <li>React</li>
