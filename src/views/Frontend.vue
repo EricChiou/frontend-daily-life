@@ -3,7 +3,7 @@
     <div class="title">前端</div>
     <div class="sub-title">文章列表</div>
     <router-link v-for="content in article" :key="content.link" :to="content.link">
-      <div class="article">
+      <div class="article-list">
         <h4>{{content.title}}</h4>
         <div class="date">{{content.date}}</div>
         <div class="summary">{{content.summary}}</div>
@@ -17,18 +17,18 @@ export default {
   data: () => ({
     article: [
       {
+        title: 'HTML 內的 <head>',
+        date: '2019 / 04 / 23',
+        summary:
+          '記錄一些 html 中的設定，包括 <html> 及 <head> 內的 <base>、<meta> 等等。',
+        link: '/frontend/html-head'
+      },
+      {
         title: '前端發展',
         date: '2019 / 04 / 19',
         summary:
           '討論前端發展趨勢，以及對目前主流的三大框架 React、Angular2 及 Vue 之間做些簡單的對比和使用心得。',
         link: '/frontend/frontend-trend'
-      },
-      {
-        title: 'HTML 內的 <head>',
-        date: '2019 / 04 / 23',
-        summary:
-          '了解 html 的各種設定，包括 <html>、<head> 內的 <base>、<meta>、...等。',
-        link: '/frontend/html-head'
       }
     ]
   })
@@ -52,7 +52,7 @@ export default {
     font-size: 26px;
     border-bottom: 1px dashed #cccccc;
   }
-  .article {
+  .article-list {
     margin: 10px 15px;
     padding: 0 2px;
     color: #3a4750;
@@ -64,12 +64,11 @@ export default {
       font-size: 24px;
     }
     .date {
-      padding: 0 2px;
+      margin: 0 2px;
       color: #aaaaaa;
     }
     .summary {
-      margin: 10px 0 20px 0;
-      padding: 0 2px;
+      margin: 10px 2px 20px 2px;
       color: #303841;
     }
     &:hover {
@@ -90,9 +89,12 @@ export default {
       font-size: 22px;
       border-bottom: 1px dashed #cccccc;
     }
-    .article {
+    .article-list {
       h4 {
         font-size: 20px;
+      }
+      .date {
+        font-size: 14px;
       }
       .summary {
         margin: 5px 0 10px 0;
