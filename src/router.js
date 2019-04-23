@@ -5,6 +5,7 @@ import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Frontend from './views/Frontend.vue';
 import FrontendTrend from './views/article/frontend/FrontendTrend.vue';
+import HtmlHead from './views/article/frontend/HtmlHead.vue';
 
 Vue.use(Router);
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/frontend/frontend-trend',
       name: 'frontend-trend',
       component: FrontendTrend
+    },
+    {
+      path: '/frontend/html-head',
+      name: 'html-head',
+      component: HtmlHead
     }
   ]
 });

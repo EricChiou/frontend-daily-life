@@ -22,6 +22,13 @@ export default {
         summary:
           '討論前端發展趨勢，以及對目前主流的三大框架 React、Angular2 及 Vue 之間做些簡單的對比和使用心得。',
         link: '/frontend/frontend-trend'
+      },
+      {
+        title: 'HTML 內的 <head>',
+        date: '2019 / 04 / 23',
+        summary:
+          '了解 html 的各種設定，包括 <html>、<head> 內的 <base>、<meta>、...等。',
+        link: '/frontend/html-head'
       }
     ]
   })

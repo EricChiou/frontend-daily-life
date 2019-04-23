@@ -4,12 +4,13 @@
     <div class="date">2019 / 04 / 19</div>
     <div class="under-line"></div>
     <div class="content">
-      前端發展的速度之快，讓許多前端工程師招架不住，各種新的框架、函式庫、技術不斷出現，讓人應接不暇，而近幾年，在框架（或函式庫）的部分更是分別以
+      <br>前端發展的速度之快，讓許多前端工程師招架不住，各種新的框架、函式庫、技術不斷出現，讓人應接不暇，而近幾年，在框架（或函式庫）的部分更是分別以
       Facebook 的 React、Google 的 Angular2 以及 獨立開發者
       <span
         class="name"
       >尤雨溪</span>
       的 Vue 三家獨大，形成三國鼎立的局面。
+      <br>
       <br>
       <div class="text-center">
         <img src="../../../assets/images/three_kingdoms.jpg">
@@ -17,7 +18,7 @@
       </div>
       <br>
       <div class="header">淺談三大框架</div>
-      <hr>目前 React 仍延續其統治地位，Angular2 繼續保持著眾多的擁護者，Vue 則是後勢看漲，甚至在 Github 的星星數力壓 React，而這三大框架都是基於組件的，網頁組件化已經是前端的主流趨勢。而在效能部分，基本上三個框架的效能都已經夠好到讓你足以面對各種狀況，因此不會花太多時間在效能的討論上。下圖為在 npm 及 Github 上的數據統計：
+      <hr>目前 React 仍延續其統治地位，Angular2 繼續保持著一群堅定的擁護者，Vue 則是後勢看漲，甚至在 Github 的星星數力壓 React，而這三大框架都是基於組件的，網頁組件化已經是前端的主流趨勢。而在效能部分，基本上三個框架的效能都已經夠好到讓你足以面對各種狀況，因此不會花太多時間在效能的討論上。下圖分別為在 npm 及 Github 上的統計數據：
       <br>
       <br>
       <div class="text-center">
@@ -30,7 +31,7 @@
       </div>
       <br>
       <span class="sub-header">React：</span>
-      <hr>嚴格說起來 React 並不是框架，而是一個函式庫，你可以使用它所提供的各種方便的功能來完成你的專案，它並不限制你要遵照某種格式來寫或必須使用什麼套件，因此彈性很高。
+      <hr>嚴格說起來 React 並不是一個框架，而是函式庫，你可以使用它所提供的各種方便的功能來完成你的專案，它並不嚴格限制你要遵照某種格式來寫或必須使用什麼套件，因此彈性很高。
       <br>
       <br>React 屬於 MVC（Model-View-Controller）架構，它是基於 JavaScript 的，也就是你需要在 JavaScript 中完成所有的事情，這也是與其他兩個框架最大的不同點。
       <br>
