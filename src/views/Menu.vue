@@ -1,6 +1,6 @@
 <template>
   <div id="menu-container">
-    <router-link to="/home">
+    <router-link :to="{name:'home'}">
       <div class="title">
         <div class="first-line">Frontend</div>
         <div class="second-line">Daily Life</div>

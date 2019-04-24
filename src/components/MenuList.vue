@@ -1,7 +1,7 @@
 <template>
   <div id="menu-list-container">
     <ul>
-      <router-link to="/frontend">
+      <router-link :to="{name:'frontend'}">
         <li>前端</li>
       </router-link>
       <li>Angular</li>

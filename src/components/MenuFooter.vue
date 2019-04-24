@@ -1,7 +1,7 @@
 <template>
   <div id="menu-footer-container">
     <ul>
-      <router-link to="/about">
+      <router-link :to="{name:'about'}">
         <li>關於我</li>
       </router-link>
       <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
