@@ -1,11 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+import Cons from './util/constants';
+
 import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Frontend from './views/Frontend.vue';
 import FrontendTrend from './views/article/frontend/FrontendTrend.vue';
-import HtmlHead from './views/article/frontend/HtmlHead.vue';
+import HtmlSetting from './views/article/frontend/HtmlSetting.vue';
+import RWD from './views/article/frontend/RWD.vue';
 
 Vue.use(Router);
 
@@ -33,14 +36,19 @@ export default new Router({
       component: Frontend
     },
     {
-      path: '/frontend/frontend-trend',
-      name: 'frontend-trend',
+      path: Cons.article.frontendTrend.link,
+      name: Cons.article.frontendTrend.name,
       component: FrontendTrend
     },
     {
-      path: '/frontend/html-head',
-      name: 'html-head',
-      component: HtmlHead
+      path: Cons.article.htmlSetting.link,
+      name: Cons.article.htmlSetting.name,
+      component: HtmlSetting
+    },
+    {
+      path: Cons.article.rwd.link,
+      name: Cons.article.rwd.name,
+      component: RWD
     }
   ]
 });

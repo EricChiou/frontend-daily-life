@@ -1,11 +1,9 @@
 <template>
   <div id="html-head-container">
     <div class="article">
-      <div class="title">HTML 內的 &lt;head&gt;</div>
-      <div class="date">2019 / 04 / 23</div>
-      <div
-        class="summary"
-      >記錄一些 html 中的設定，包括 &lt;html&gt; 及 &lt;head&gt; 內的 &lt;base&gt;、&lt;meta&gt; 等等</div>
+      <div class="title">{{article.title}}</div>
+      <div class="date">{{article.date}}</div>
+      <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
       <div class="content">
         <div class="header">html 的語系設定</div>
@@ -87,7 +85,7 @@
           <br>
           <div
             class="sub-header"
-          >&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"&gt;：</div>設定在移動裝置上，畫面的寬度及初始縮放倍率等。
+          >&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"&gt;</div>設定在移動裝置上，畫面的寬度及初始縮放倍率等。
           <br>width=device-width，設定畫面寬度等於螢幕寬度；
           <br>initial-scale=1，將畫面初始縮放倍率設為 1 倍；
           <br>minimum-scale=1，設定畫面縮放的最小倍率為 1 倍；
@@ -97,7 +95,7 @@
           <br>
           <div
             class="sub-header"
-          >&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;：</div>設定各個瀏覽器預設使用的版本。
+          >&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</div>設定各個瀏覽器預設使用的版本。
           <br>IE=edge，設定 IE 使用 Edge 版本開啟網頁；
           <br>chrome=1，IE 有個模擬 Chrome 的兼容模式，這個設定就是開啟這個功能。
         </div>
@@ -107,7 +105,11 @@
 </template>
 
 <script>
-export default {};
+import Cons from '../../../util/constants';
+
+export default {
+  data: () => ({ article: Cons.article.htmlSetting })
+};
 </script>
 
 <style lang="scss" scoped>

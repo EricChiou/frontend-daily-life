@@ -1,9 +1,9 @@
 <template>
   <div id="frontend-trend-container">
     <div class="article">
-      <div class="title">前端發展</div>
-      <div class="date">2019 / 04 / 19</div>
-      <div class="summary">討論前端發展趨勢，以及對目前主流的三大框架 React、Angular2 及 Vue 之間做些簡單的對比和使用心得。</div>
+      <div class="title">{{article.title}}</div>
+      <div class="date">{{article.date}}</div>
+      <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
       <div class="content">
         <div class="text">
@@ -223,7 +223,11 @@
 </template>
 
 <script>
-export default {};
+import Cons from '../../../util/constants';
+
+export default {
+  data: () => ({ article: Cons.article.frontendTrend })
+};
 </script>
 
 <style lang="scss" scoped>

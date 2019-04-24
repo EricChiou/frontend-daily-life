@@ -1,9 +1,11 @@
 <template>
   <div id="menu-container">
-    <div class="title">
-      <div class="first-line">Frontend</div>
-      <div class="second-line">Daily Life</div>
-    </div>
+    <router-link to="/home">
+      <div class="title">
+        <div class="first-line">Frontend</div>
+        <div class="second-line">Daily Life</div>
+      </div>
+    </router-link>
     <div class="description">記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。</div>
     <MenuList></MenuList>
     <MenuFooter></MenuFooter>
@@ -33,17 +35,24 @@ export default {
     font-size: 46px;
     font-weight: bold;
     font-style: italic;
+    cursor: pointer;
     .first-line {
       text-align: left;
     }
     .second-line {
       text-align: right;
     }
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .description {
     margin: 5px 45px 0 45px;
     font-size: 18px;
     color: #aaaaaa;
+  }
+  a {
+    color: #ffffff;
   }
   @media only screen and (max-width: 767px) {
     position: relative;

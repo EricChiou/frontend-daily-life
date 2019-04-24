@@ -13,22 +13,28 @@
 </template>
 
 <script>
+import Cons from '../util/constants';
+
 export default {
   data: () => ({
     article: [
       {
-        title: 'HTML 內的 <head>',
-        date: '2019 / 04 / 23',
-        summary:
-          '記錄一些 html 中的設定，包括 <html> 及 <head> 內的 <base>、<meta> 等等。',
-        link: '/frontend/html-head'
+        title: Cons.article.rwd.title,
+        date: Cons.article.rwd.date,
+        summary: Cons.article.rwd.summary,
+        link: Cons.article.rwd.link
       },
       {
-        title: '前端發展',
-        date: '2019 / 04 / 19',
-        summary:
-          '討論前端發展趨勢，以及對目前主流的三大框架 React、Angular2 及 Vue 之間做些簡單的對比和使用心得。',
-        link: '/frontend/frontend-trend'
+        title: Cons.article.htmlSetting.title,
+        date: Cons.article.htmlSetting.date,
+        summary: Cons.article.htmlSetting.summary,
+        link: Cons.article.htmlSetting.link
+      },
+      {
+        title: Cons.article.frontendTrend.title,
+        date: Cons.article.frontendTrend.date,
+        summary: Cons.article.frontendTrend.summary,
+        link: Cons.article.frontendTrend.link
       }
     ]
   })
