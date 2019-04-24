@@ -21,17 +21,17 @@ export default new Router({
       redirect: { name: 'home' }
     },
     {
-      path: '/home',
+      path: '/frontend-daily-life/home',
       name: 'home',
       component: Home
     },
     {
-      path: '/about',
+      path: '/frontend-daily-life/about',
       name: 'about',
       component: About
     },
     {
-      path: '/frontend',
+      path: '/frontend-daily-life/frontend',
       name: 'frontend',
       component: Frontend
     },
