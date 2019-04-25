@@ -15,6 +15,7 @@
         </a>
       </li>
     </ul>
+    <div class="rights-reserved">© 2019 Calico & MooMoo</div>
   </div>
 </template>
 
@@ -32,7 +33,7 @@ export default {};
   text-align: center;
   color: #aaaaaa;
   ul {
-    margin: 15px 0;
+    margin: 5px 0;
     padding: 0;
     a {
       color: #aaaaaa;
@@ -52,6 +53,10 @@ export default {};
     .vertical-line {
       font-size: 20px;
     }
+  }
+  .rights-reserved {
+    margin-bottom: 5px;
+    font-size: 16px;
   }
 }
 </style>
