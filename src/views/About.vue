@@ -13,7 +13,7 @@
         <br>我的 Email：miatlab@gmail.com
       </div>
       <div class="right-block">
-        <img src="../assets/images/play_cat.jpg">
+        <img src="../assets/images/play_cat.png">
         <br>(玩貓中)
       </div>
     </div>
