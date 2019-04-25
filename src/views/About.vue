@@ -3,7 +3,7 @@
     <div class="title">關於我</div>
     <div class="content">
       <div class="left-block">
-        目前是個前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
+        前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
         <br>
         <br>主修 Angular2，對於 React、Vue 也略有涉略。
         <br>會一些後端，主要使用過 Golang 和 Nodejs，也碰過一點 Java 和 Python。
