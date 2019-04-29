@@ -16,7 +16,7 @@
           <br>root ALL=(ALL:ALL) ALL
           <br>jenkins ALL=(ALL) NOPASSWD: ALL
         </div>
-        <br>按 Ctrl+O 存檔, Ctrl+X 離開
+        <br>按 Ctrl + O 存檔，Ctrl + X 離開
       </div>
     </div>
   </div>
