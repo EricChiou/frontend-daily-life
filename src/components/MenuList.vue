@@ -7,7 +7,9 @@
       <li>Angular</li>
       <li>React</li>
       <li>Vue</li>
-      <li>相關技術</li>
+      <router-link :to="{name:'other'}">
+        <li>相關技術</li>
+      </router-link>
       <li>推薦網站</li>
     </ul>
   </div>

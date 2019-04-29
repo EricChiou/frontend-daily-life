@@ -30,6 +30,71 @@ a {
 .text-center {
   text-align: center;
 }
+.article-list-container {
+  .title,
+  .sub-title {
+    color: #3a4750;
+    font-weight: bold;
+  }
+  .title {
+    margin: 10px 15px 5px 15px;
+    font-size: 32px;
+  }
+  .sub-title {
+    margin: 0px 15px 5px 15px;
+    padding: 0 2px;
+    font-size: 26px;
+    border-bottom: 1px dashed #cccccc;
+  }
+  .article-list {
+    margin: 10px 15px;
+    padding: 0 2px;
+    color: #3a4750;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+    }
+    .date {
+      margin: 0 2px;
+      color: #aaaaaa;
+    }
+    .summary {
+      margin: 10px 2px 20px 2px;
+      color: #303841;
+    }
+    &:hover {
+      h4,
+      .summary {
+        text-decoration: underline;
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .title {
+      font-size: 28px;
+    }
+    .sub-title {
+      margin: 0px 15px 5px 15px;
+      padding: 0 2px;
+      font-size: 22px;
+      border-bottom: 1px dashed #cccccc;
+    }
+    .article-list {
+      h4 {
+        font-size: 20px;
+      }
+      .date {
+        font-size: 14px;
+      }
+      .summary {
+        margin: 5px 0 10px 0;
+      }
+    }
+  }
+}
 .article {
   margin-bottom: 100px;
   .title {
