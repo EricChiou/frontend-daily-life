@@ -9,10 +9,39 @@
 
 <script>
 import Menu from './views/Menu.vue';
+import { setTimeout } from 'timers';
 
 export default {
   components: {
     Menu
+  },
+  methods: {
+    swNotification() {
+      if (
+        window.navigator.serviceWorker &&
+        window.PushManager &&
+        window.Notification
+      ) {
+        window.navigator.serviceWorker.ready.then(() => {
+          window.Notification.requestPermission().then(status => {
+            if (status === 'granted') {
+              setTimeout(() => {
+                self.registration.showNotification('10秒訊息', {});
+              }, 10000);
+              setTimeout(() => {
+                self.registration.showNotification('20秒訊息', {});
+              }, 20000);
+              setTimeout(() => {
+                self.registration.showNotification('30秒訊息', {});
+              }, 30000);
+            }
+          });
+        });
+      }
+    }
+  },
+  mounted() {
+    this.swNotification();
   }
 };
 </script>
