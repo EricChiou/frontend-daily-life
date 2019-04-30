@@ -22,9 +22,9 @@ export default {
         window.PushManager &&
         window.Notification
       ) {
-        window.navigator.serviceWorker.ready.then(registration => {
-          window.Notification.requestPermission().then(status => {
-            if (status === 'granted') {
+        window.Notification.requestPermission().then(status => {
+          if (status === 'granted') {
+            window.navigator.serviceWorker.ready.then(registration => {
               setTimeout(() => {
                 registration.showNotification('10秒訊息', {});
               }, 10000);
@@ -34,8 +34,8 @@ export default {
               setTimeout(() => {
                 registration.showNotification('30秒訊息', {});
               }, 30000);
-            }
-          });
+            });
+          }
         });
       }
     }
