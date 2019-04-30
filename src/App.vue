@@ -14,34 +14,6 @@ import { setTimeout } from 'timers';
 export default {
   components: {
     Menu
-  },
-  methods: {
-    swNotification() {
-      if (
-        window.navigator.serviceWorker &&
-        window.PushManager &&
-        window.Notification
-      ) {
-        window.Notification.requestPermission().then(status => {
-          if (status === 'granted') {
-            window.navigator.serviceWorker.ready.then(registration => {
-              setTimeout(() => {
-                registration.showNotification('10秒訊息', {});
-              }, 10000);
-              setTimeout(() => {
-                registration.showNotification('20秒訊息', {});
-              }, 20000);
-              setTimeout(() => {
-                registration.showNotification('30秒訊息', {});
-              }, 30000);
-            });
-          }
-        });
-      }
-    }
-  },
-  mounted() {
-    this.swNotification();
   }
 };
 </script>
