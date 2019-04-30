@@ -22,17 +22,17 @@ export default {
         window.PushManager &&
         window.Notification
       ) {
-        window.navigator.serviceWorker.ready.then(() => {
+        window.navigator.serviceWorker.ready.then(registration => {
           window.Notification.requestPermission().then(status => {
             if (status === 'granted') {
               setTimeout(() => {
-                self.registration.showNotification('10秒訊息', {});
+                registration.showNotification('10秒訊息', {});
               }, 10000);
               setTimeout(() => {
-                self.registration.showNotification('20秒訊息', {});
+                registration.showNotification('20秒訊息', {});
               }, 20000);
               setTimeout(() => {
-                self.registration.showNotification('30秒訊息', {});
+                registration.showNotification('30秒訊息', {});
               }, 30000);
             }
           });
