@@ -11,7 +11,7 @@
       <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <li>
         <a href="https://github.com/EricChiou/frontend-daily-life" target="_blank">
-          <img src="../assets/images/github.png" width="20" height="20">Github
+          <img src="../../../assets/images/github.png" width="20" height="20">Github
         </a>
       </li>
     </ul>

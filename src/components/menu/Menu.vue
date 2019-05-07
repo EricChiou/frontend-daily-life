@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import MenuList from '../components/MenuList.vue';
-import MenuFooter from '../components/MenuFooter.vue';
+import MenuList from './menu-components/MenuList.vue';
+import MenuFooter from './menu-components/MenuFooter.vue';
 
 export default {
   components: { MenuList, MenuFooter }

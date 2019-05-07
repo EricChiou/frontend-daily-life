@@ -8,8 +8,7 @@
 </template>
 
 <script>
-import Menu from './views/Menu.vue';
-import { setTimeout } from 'timers';
+import Menu from './components/menu/Menu.vue';
 
 export default {
   components: {
@@ -175,7 +174,7 @@ a {
     }
     .content {
       .text {
-        margin: 0;
+        margin: 0 2px;
       }
     }
   }

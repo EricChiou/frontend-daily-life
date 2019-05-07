@@ -4,17 +4,24 @@ import Router from 'vue-router';
 import Cons from './util/constants';
 
 import Home from './views/Home.vue';
-import About from './views/About.vue';
-import Frontend from './views/Frontend.vue';
-import Other from './views/Other.vue';
+import About from './views/about/About.vue';
+import Recommend from './views/recommend/Recommend.vue';
 
+// article list
+import Frontend from './views/frontend/Frontend.vue';
+import Angular from './views/angular/Angular.vue';
+import React from './views/react/React.vue';
+import VueView from './views/vue/Vue.vue';
+import Other from './views/other/Other.vue';
+
+// article
 // frontend
-import FrontendTrend from './views/article/frontend/FrontendTrend.vue';
-import HtmlSetting from './views/article/frontend/HtmlSetting.vue';
-import RWD from './views/article/frontend/RWD.vue';
+import FrontendTrend from './views/frontend/article/FrontendTrend.vue';
+import HtmlSetting from './views/frontend/article/HtmlSetting.vue';
+import RWD from './views/frontend/article/RWD.vue';
 
 // other
-import Jenkins from './views/article/other/Jenkins.vue';
+import Jenkins from './views/other/article/Jenkins.vue';
 
 Vue.use(Router);
 
@@ -42,10 +49,31 @@ export default new Router({
       component: Frontend
     },
     {
+      path: '/angular',
+      name: 'angular',
+      component: Angular
+    },
+    {
+      path: '/react',
+      name: 'react',
+      component: React
+    },
+    {
+      path: '/vue',
+      name: 'vue',
+      component: VueView
+    },
+    {
       path: '/other',
       name: 'other',
       component: Other
     },
+    {
+      path: '/recommend',
+      name: 'recommend',
+      component: Recommend
+    },
+    // article
     // frontend
     {
       path: Cons.article.frontendTrend.link,

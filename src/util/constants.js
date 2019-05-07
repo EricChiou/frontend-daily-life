@@ -25,10 +25,10 @@ export default {
       name: 'frontend-trend'
     },
     jenkins: {
-      title: '讓 Jenkins 在 Ubuntu 上取得 root 權限',
+      title: 'Jenkins 各種相關設定',
       date: '2019 / 04 / 29',
       summary:
-        '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限。',
+        '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案。',
       link: '/other/jenkins',
       name: 'jenkins'
     }

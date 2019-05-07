@@ -4,7 +4,7 @@
     <div class="content">
       前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
       <div class="about-img">
-        <img src="../assets/images/play_cat.jpg">
+        <img src="../../assets/images/play_cat.jpg">
       </div>主修 Angular2，對於 React、Vue 也有涉略。
       <br>略懂後端，主要使用過 Golang 和 Nodejs，也寫過 Java 和 Python。
       <br>

@@ -4,13 +4,21 @@
       <router-link :to="{name:'frontend'}">
         <li>前端</li>
       </router-link>
-      <li>Angular</li>
-      <li>React</li>
-      <li>Vue</li>
+      <router-link :to="{name:'angular'}">
+        <li>Angular</li>
+      </router-link>
+      <router-link :to="{name:'react'}">
+        <li>React</li>
+      </router-link>
+      <router-link :to="{name:'vue'}">
+        <li>Vue</li>
+      </router-link>
       <router-link :to="{name:'other'}">
         <li>相關技術</li>
       </router-link>
-      <li>推薦網站</li>
+      <router-link :to="{name:'recommend'}">
+        <li>推薦網站</li>
+      </router-link>
     </ul>
   </div>
 </template>
