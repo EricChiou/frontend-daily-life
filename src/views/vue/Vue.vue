@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Cons from '../../util/constants';
+// import Cons from '../../util/constants';
 
 export default {
   data: () => ({
