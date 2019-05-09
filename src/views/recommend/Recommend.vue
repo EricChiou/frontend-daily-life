@@ -38,7 +38,7 @@
             Brand Colors
             <img src="../../assets/images/link_icon.png" height="12">
           </a>
-          查看各大品牌 LOGO 的配色
+          <br>查看各大品牌 LOGO 的配色
         </div>
         <div class="web">
           <a href="https://coolors.co/" target="_blank">
