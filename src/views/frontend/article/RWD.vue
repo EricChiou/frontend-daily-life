@@ -39,19 +39,39 @@
           這邊貼上 RWD 重要寬度所使用的 css，方便使用。
           <br>
           <br>~ 480px
-          <div class="code-area">@media only screen and (max-width: 479px)</div>
+          <div class="code-area">
+            <div class="code">@media only screen and (max-width: 479px)</div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
+          </div>
           <br>480px ~ 768px
           <div class="code-area">
-            @media only screen and (min-width: 480px)
-            <br>@media only screen and (max-width: 767px)
+            <div class="code">
+              @media only screen and (min-width: 480px)
+              <br>@media only screen and (max-width: 767px)
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
           <br>768px ~ 1024px
           <div class="code-area">
-            @media only screen and (min-width: 768px)
-            <br>@media only screen and (max-width: 1023px)
+            <div class="code">
+              @media only screen and (min-width: 768px)
+              <br>@media only screen and (max-width: 1023px)
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
           <br>1024px ~
-          <div class="code-area">@media only screen and (min-width: 1024px)</div>
+          <div class="code-area">
+            <div class="code">@media only screen and (min-width: 1024px)</div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -60,9 +80,22 @@
 
 <script>
 import Cons from '../../../util/constants';
+import Clipboard from '../../../util/clipboard';
 
 export default {
-  data: () => ({ article: Cons.article.rwd })
+  data: () => ({ article: Cons.article.rwd }),
+  methods: {
+    copy(event) {
+      let ele = event.target.parentElement;
+      while (ele) {
+        if (ele.className === 'code-area') {
+          Clipboard.copy2Clipboard(ele);
+          break;
+        }
+        ele = ele.parentElement;
+      }
+    }
+  }
 };
 </script>
 

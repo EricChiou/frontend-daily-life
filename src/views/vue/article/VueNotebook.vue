@@ -10,17 +10,22 @@
         <hr>
         <div class="text">
           <div class="code-area">
-            &lt;template&gt;
-            <br>&nbsp;&nbsp;&lt;div&gt;&lt;/div&gt;
-            <br>&lt;/template&gt;
-            <br>
-            <br>&lt;script&gt;
-            <br>
-            export default {};
-            <br>&lt;/script&gt;
-            <br>
-            <br>&lt;style lang="scss" scoped&gt;
-            <br>&lt;/style&gt;
+            <div class="code">
+              &lt;template&gt;
+              <br>&nbsp;&nbsp;&lt;div&gt;&lt;/div&gt;
+              <br>&lt;/template&gt;
+              <br>
+              <br>&lt;script&gt;
+              <br>
+              export default {};
+              <br>&lt;/script&gt;
+              <br>
+              <br>&lt;style lang="scss" scoped&gt;
+              <br>&lt;/style&gt;
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
         </div>
         <br>
@@ -28,22 +33,27 @@
         <hr>
         <div class="text">
           <div class="code-area">
-            export default {
-            <br>
-            &nbsp;&nbsp;data: () => ({ key: value }),
-            <br>&nbsp;&nbsp;computed: {
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;demo: () => { console.log('computed demo'); }
-            <br>&nbsp;&nbsp;},
-            <br>&nbsp;&nbsp;methods: {
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;demo2: () => { console.log('methods demo'); }
-            <br>&nbsp;&nbsp;},
-            <br>
-            &nbsp;&nbsp;created() { this.demo; },
-            <br>
-            &nbsp;&nbsp;mounted() { this.demo2(); }
-            <br>};
+            <div class="code">
+              export default {
+              <br>
+              &nbsp;&nbsp;data: () => ({ key: value }),
+              <br>&nbsp;&nbsp;computed: {
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;demo: () => { console.log('computed demo'); }
+              <br>&nbsp;&nbsp;},
+              <br>&nbsp;&nbsp;methods: {
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;demo2: () => { console.log('methods demo'); }
+              <br>&nbsp;&nbsp;},
+              <br>
+              &nbsp;&nbsp;created() { this.demo; },
+              <br>
+              &nbsp;&nbsp;mounted() { this.demo2(); }
+              <br>};
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
           <br>
         </div>
@@ -59,11 +69,22 @@
 
 <script>
 import Cons from '../../../util/constants';
+import Clipboard from '../../../util/clipboard';
 
 export default {
-  data: () => ({
-    article: Cons.article.vueNotebook
-  })
+  data: () => ({ article: Cons.article.vueNotebook }),
+  methods: {
+    copy(event) {
+      let ele = event.target.parentElement;
+      while (ele) {
+        if (ele.className === 'code-area') {
+          Clipboard.copy2Clipboard(ele);
+          break;
+        }
+        ele = ele.parentElement;
+      }
+    }
+  }
 };
 </script>
 

@@ -19,7 +19,14 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: []
+    article: [
+      {
+        title: Cons.article.reactNotebook.title,
+        date: Cons.article.reactNotebook.date,
+        summary: Cons.article.reactNotebook.summary,
+        link: Cons.article.reactNotebook.link
+      }
+    ]
   })
 };
 </script>

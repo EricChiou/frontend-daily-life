@@ -1,6 +1,7 @@
 <template>
-  <div id="frontend-container">
+  <div id="home-container">
     <div class="article-list-container">
+      <div class="title">全部文章列表</div>
       <router-link v-for="content in article" :key="content.link" :to="content.link">
         <div class="article-list">
           <h4>{{content.title}}</h4>
@@ -17,20 +18,28 @@ import Cons from '../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.ngNotebook.title,
-        date: Cons.article.ngNotebook.date,
-        summary: Cons.article.ngNotebook.summary,
-        link: Cons.article.ngNotebook.link
-      },
-      {
-        title: Cons.article.vueNotebook.title,
-        date: Cons.article.vueNotebook.date,
-        summary: Cons.article.vueNotebook.summary,
-        link: Cons.article.vueNotebook.link
-      }
-    ]
-  })
+    article: []
+  }),
+  created() {
+    for (const key of Object.keys(Cons.article)) {
+      this.article.unshift({
+        title: Cons.article[key].title,
+        date: Cons.article[key].date,
+        summary: Cons.article[key].summary,
+        link: Cons.article[key].link
+      });
+    }
+  }
 };
 </script>
+
+<style lang="scss" scoped>
+#home-container {
+  .article-list-container {
+    .title {
+      padding-bottom: 5px;
+      border-bottom: 1px dashed #cccccc;
+    }
+  }
+}
+</style>

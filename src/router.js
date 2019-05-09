@@ -13,16 +13,18 @@ import Angular from './views/angular/Angular.vue';
 import React from './views/react/React.vue';
 import VueView from './views/vue/Vue.vue';
 import Other from './views/other/Other.vue';
-// angular
-import NgNotebook from './views/angular/article/NgNotebook.vue';
-// vue
-import VueNotebook from './views/vue/article/VueNotebook.vue';
 // article
 // frontend
 import FrontendTrend from './views/frontend/article/FrontendTrend.vue';
 import HtmlSetting from './views/frontend/article/HtmlSetting.vue';
 import RWD from './views/frontend/article/RWD.vue';
-
+import FrontendNotebook from './views/frontend/article/FrontendNotebook.vue';
+// angular
+import NgNotebook from './views/angular/article/NgNotebook.vue';
+// react
+import ReactNotebook from './views/react/article/ReactNotebook.vue';
+// vue
+import VueNotebook from './views/vue/article/VueNotebook.vue';
 // other
 import Jenkins from './views/other/article/Jenkins.vue';
 
@@ -93,6 +95,11 @@ export default new Router({
       name: Cons.article.rwd.name,
       component: RWD
     },
+    {
+      path: Cons.article.frontendNotebook.link,
+      name: Cons.article.frontendNotebook.name,
+      component: FrontendNotebook
+    },
     // angular
     {
       path: Cons.article.ngNotebook.link,
@@ -100,6 +107,11 @@ export default new Router({
       component: NgNotebook
     },
     // react
+    {
+      path: Cons.article.reactNotebook.link,
+      name: Cons.article.reactNotebook.name,
+      component: ReactNotebook
+    },
     // vue
     {
       path: Cons.article.vueNotebook.link,

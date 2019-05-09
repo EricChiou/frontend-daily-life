@@ -37,6 +37,12 @@ export default {
         date: Cons.article.frontendTrend.date,
         summary: Cons.article.frontendTrend.summary,
         link: Cons.article.frontendTrend.link
+      },
+      {
+        title: Cons.article.frontendNotebook.title,
+        date: Cons.article.frontendNotebook.date,
+        summary: Cons.article.frontendNotebook.summary,
+        link: Cons.article.frontendNotebook.link
       }
     ]
   })

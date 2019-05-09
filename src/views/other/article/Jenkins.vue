@@ -12,12 +12,22 @@
           修改 Sudoers 讓 Jenkins 取得 root 權限
           <br>
           <br>輸入：
-          <div class="code-area">sudo visudo</div>
+          <div class="code-area">
+            <div class="code">sudo visudo</div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
+          </div>
           <br>新增一行 "jenkins ALL=(ALL) NOPASSWD: ALL"：
           <div class="code-area">
-            # User privilege specification
-            <br>root ALL=(ALL:ALL) ALL
-            <br>jenkins ALL=(ALL) NOPASSWD: ALL
+            <div class="code">
+              # User privilege specification
+              <br>root ALL=(ALL:ALL) ALL
+              <br>jenkins ALL=(ALL) NOPASSWD: ALL
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
           <br>按 Ctrl + O 存檔，Ctrl + X 離開
           <br>
@@ -43,8 +53,13 @@
         <div class="text">
           使用 Jenkins 執行 go build、go run 等指令時，會發現 PATH、GOPATH 或 GROOT 會被預設為 Jenkins 底下的資料夾，此時會抓不到之前所安裝的 package 及相關指令，因此需要另外設定 GOPATH 和 PATH，在執行 go 指令前加入這兩行：
           <div class="code-area">
-            export GOPATH=/home/user_name/go
-            <br>export PATH=$PATH:/usr/local/go/bin
+            <div class="code">
+              export GOPATH=/home/user_name/go
+              <br>export PATH=$PATH:/usr/local/go/bin
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
           <br>
         </div>
@@ -53,13 +68,23 @@
         <div class="text">
           shell script 檔（檔名為 build.sh）：
           <div class="code-area">
-            #!/bin/bash
-            <br>export GOPATH=/home/user_name/go
-            <br>export PATH=$PATH:/usr/local/go/bin
-            <br>go build main.go
+            <div class="code">
+              #!/bin/bash
+              <br>export GOPATH=/home/user_name/go
+              <br>export PATH=$PATH:/usr/local/go/bin
+              <br>go build main.go
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
           </div>
           <br>Jenkins 執行指令：
-          <div class="code-area">sudo ./build.sh</div>
+          <div class="code-area">
+            <div class="code">sudo ./build.sh</div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,9 +93,22 @@
 
 <script>
 import Cons from '../../../util/constants';
+import Clipboard from '../../../util/clipboard';
 
 export default {
-  data: () => ({ article: Cons.article.jenkins })
+  data: () => ({ article: Cons.article.jenkins }),
+  methods: {
+    copy(event) {
+      let ele = event.target.parentElement;
+      while (ele) {
+        if (ele.className === 'code-area') {
+          Clipboard.copy2Clipboard(ele);
+          break;
+        }
+        ele = ele.parentElement;
+      }
+    }
+  }
 };
 </script>
 

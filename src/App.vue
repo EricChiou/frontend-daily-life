@@ -144,10 +144,30 @@ a {
       margin: 0 5px;
     }
     .code-area {
+      position: relative;
       padding: 5px 8px;
       font-size: 16px;
       background-color: #eeeeee;
       border-radius: 4px;
+      .code {
+        overflow: auto;
+      }
+      .copy {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2px;
+        padding: 4px 7px 0 7px;
+        width: 18px;
+        cursor: pointer;
+        border-radius: 6px;
+        &:hover {
+          background-color: #dddddd;
+        }
+        &:active {
+          background-color: #cccccc;
+        }
+      }
     }
     img {
       max-width: 100%;
@@ -155,16 +175,19 @@ a {
     ul {
       margin: 0;
     }
-    table {
-      border-collapse: collapse;
-      th {
-        color: #eeeeee;
-        background-color: #3a4750;
-      }
-      th,
-      td {
-        border: 1px solid #cccccc;
-        padding: 8px;
+    .table {
+      overflow: auto;
+      table {
+        border-collapse: collapse;
+        th {
+          color: #eeeeee;
+          background-color: #3a4750;
+        }
+        th,
+        td {
+          border: 1px solid #cccccc;
+          padding: 8px;
+        }
       }
     }
   }
