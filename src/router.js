@@ -13,7 +13,10 @@ import Angular from './views/angular/Angular.vue';
 import React from './views/react/React.vue';
 import VueView from './views/vue/Vue.vue';
 import Other from './views/other/Other.vue';
-
+// angular
+import NgNotebook from './views/angular/article/NgNotebook.vue';
+// vue
+import VueNotebook from './views/vue/article/VueNotebook.vue';
 // article
 // frontend
 import FrontendTrend from './views/frontend/article/FrontendTrend.vue';
@@ -89,6 +92,19 @@ export default new Router({
       path: Cons.article.rwd.link,
       name: Cons.article.rwd.name,
       component: RWD
+    },
+    // angular
+    {
+      path: Cons.article.ngNotebook.link,
+      name: Cons.article.ngNotebook.name,
+      component: NgNotebook
+    },
+    // react
+    // vue
+    {
+      path: Cons.article.vueNotebook.link,
+      name: Cons.article.vueNotebook.name,
+      component: VueNotebook
     },
     // other
     {

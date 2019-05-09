@@ -31,6 +31,30 @@ export default {
         '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案。',
       link: '/other/jenkins',
       name: 'jenkins'
+    },
+    vueNotebook: {
+      title: 'Vue 筆記本',
+      date: '2019 / 04 / 09',
+      summary:
+        '記錄一些 Vue 常用到的指令及基本設定和寫法',
+      link: '/vue/notebook',
+      name: 'vueNotebook'
+    },
+    reactNotebook: {
+      title: 'React 筆記本',
+      date: '2019 / 04 / 09',
+      summary:
+        '記錄一些 React 常用到的指令及基本設定和寫法',
+      link: '/react/notebook',
+      name: 'reactNotebook'
+    },
+    ngNotebook: {
+      title: 'Angular 筆記本',
+      date: '2019 / 04 / 09',
+      summary:
+        '記錄一些 Angular 常用到的指令及基本設定和寫法',
+      link: '/angular/notebook',
+      name: 'ngNotebook'
     }
   }
 };

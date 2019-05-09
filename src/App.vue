@@ -30,6 +30,9 @@ a {
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
 .article-list-container {
   margin-bottom: 100px;
   .title,
@@ -161,7 +164,6 @@ a {
       th,
       td {
         border: 1px solid #cccccc;
-        text-align: center;
         padding: 8px;
       }
     }

@@ -15,11 +15,18 @@
 </template>
 
 <script>
-// import Cons from '../../util/constants';
+import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: []
+    article: [
+      {
+        title: Cons.article.vueNotebook.title,
+        date: Cons.article.vueNotebook.date,
+        summary: Cons.article.vueNotebook.summary,
+        link: Cons.article.vueNotebook.link
+      }
+    ]
   })
 };
 </script>

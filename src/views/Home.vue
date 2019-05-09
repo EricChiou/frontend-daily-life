@@ -19,22 +19,16 @@ export default {
   data: () => ({
     article: [
       {
-        title: Cons.article.rwd.title,
-        date: Cons.article.rwd.date,
-        summary: Cons.article.rwd.summary,
-        link: Cons.article.rwd.link
+        title: Cons.article.ngNotebook.title,
+        date: Cons.article.ngNotebook.date,
+        summary: Cons.article.ngNotebook.summary,
+        link: Cons.article.ngNotebook.link
       },
       {
-        title: Cons.article.htmlSetting.title,
-        date: Cons.article.htmlSetting.date,
-        summary: Cons.article.htmlSetting.summary,
-        link: Cons.article.htmlSetting.link
-      },
-      {
-        title: Cons.article.frontendTrend.title,
-        date: Cons.article.frontendTrend.date,
-        summary: Cons.article.frontendTrend.summary,
-        link: Cons.article.frontendTrend.link
+        title: Cons.article.vueNotebook.title,
+        date: Cons.article.vueNotebook.date,
+        summary: Cons.article.vueNotebook.summary,
+        link: Cons.article.vueNotebook.link
       }
     ]
   })
