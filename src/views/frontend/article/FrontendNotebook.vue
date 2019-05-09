@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-</template> 
+</template>
 
 <script>
 import Cons from '../../../util/constants';
@@ -72,7 +72,7 @@ export default {
     }
   }
 };
-</script> 
+</script>
 
 <style lang="scss" scoped>
 a {

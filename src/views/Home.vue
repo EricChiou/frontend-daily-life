@@ -21,14 +21,14 @@ export default {
     article: []
   }),
   created() {
-    for (const key of Object.keys(Cons.article)) {
+    Object.keys(Cons.article).forEach(key => {
       this.article.unshift({
         title: Cons.article[key].title,
         date: Cons.article[key].date,
         summary: Cons.article[key].summary,
         link: Cons.article[key].link
       });
-    }
+    });
   }
 };
 </script>
