@@ -39,11 +39,11 @@
               &nbsp;&nbsp;data: () => ({ key: value }),
               <br>&nbsp;&nbsp;computed: {
               <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;demo: () => { console.log('computed demo'); }
+              &nbsp;&nbsp;&nbsp;&nbsp;demo() { console.log('computed demo'); }
               <br>&nbsp;&nbsp;},
               <br>&nbsp;&nbsp;methods: {
               <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;demo2: () => { console.log('methods demo'); }
+              &nbsp;&nbsp;&nbsp;&nbsp;demo2() { console.log('methods demo'); }
               <br>&nbsp;&nbsp;},
               <br>
               &nbsp;&nbsp;created() { this.demo; },
