@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve  
+npm start  
 ```
 Runs the app in the development mode.  
 Navigate to http://localhost:2300/ to view it in the browser.  
