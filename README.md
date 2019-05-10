@@ -7,8 +7,11 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve  
 ```
+Runs the app in the development mode.  
+Navigate to http://localhost:2300/ to view it in the browser.  
+The app will automatically reload if you change any of the source files.  
 
 ### Compiles and minifies for production
 ```
