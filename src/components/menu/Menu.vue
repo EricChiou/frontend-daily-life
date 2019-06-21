@@ -8,7 +8,9 @@
     </router-link>
     <div class="description">記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。</div>
     <MenuList></MenuList>
-    <MenuFooter></MenuFooter>
+    <div class="mobile">
+      <MenuFooter></MenuFooter>
+    </div>
   </div>
 </template>
 
@@ -54,10 +56,11 @@ export default {
   a {
     color: #ffffff;
   }
+
   @media only screen and (max-width: 767px) {
     position: relative;
     width: 100%;
-    height: 380px;
+    height: 295px;
     .title {
       width: 300px;
       max-width: calc(90vw);
@@ -71,6 +74,9 @@ export default {
     .description {
       margin: 5px 6vw 0 6vw;
       font-size: 16px;
+    }
+    .mobile {
+      display: none;
     }
   }
 }

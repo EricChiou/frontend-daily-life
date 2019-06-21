@@ -23,6 +23,7 @@ import FrontendNotebook from './views/frontend/article/FrontendNotebook.vue';
 import NgNotebook from './views/angular/article/NgNotebook.vue';
 // react
 import ReactNotebook from './views/react/article/ReactNotebook.vue';
+import ReactPropsAndState from './views/react/article/ReactPropsAndState.vue';
 // vue
 import VueNotebook from './views/vue/article/VueNotebook.vue';
 // other
@@ -111,6 +112,11 @@ export default new Router({
       path: Cons.article.reactNotebook.link,
       name: Cons.article.reactNotebook.name,
       component: ReactNotebook
+    },
+    {
+      path: Cons.article.reactPropsAndState.link,
+      name: Cons.article.reactPropsAndState.name,
+      component: ReactPropsAndState
     },
     // vue
     {

@@ -19,14 +19,7 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.ngNotebook.title,
-        date: Cons.article.ngNotebook.date,
-        summary: Cons.article.ngNotebook.summary,
-        link: Cons.article.ngNotebook.link
-      }
-    ]
+    article: [Cons.article.ngNotebook]
   })
 };
 </script>

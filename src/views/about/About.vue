@@ -8,7 +8,6 @@
       </div>主修 Angular2，對於 React、Vue 也略有涉略。
       <br>懂一些後端，主要使用過 Golang 和 Nodejs，也寫過 Java 和 Python。
       <br>
-      <br>可是其實以前在研究所寫的是 c (遮臉)。
       <br>
       <br>我的 Email：
       <a :href="mailTo">miatlab@gmail.com</a>

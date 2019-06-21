@@ -4,15 +4,20 @@
     <div class="main">
       <router-view/>
     </div>
+    <div class="app-mobile">
+      <MenuFooter></MenuFooter>
+    </div>
   </div>
 </template>
 
 <script>
 import Menu from './components/menu/Menu.vue';
+import MenuFooter from './components/menu/menu-components/MenuFooter.vue';
 
 export default {
   components: {
-    Menu
+    Menu,
+    MenuFooter
   }
 };
 </script>
@@ -192,6 +197,7 @@ a {
     }
   }
   @media only screen and (max-width: 767px) {
+    margin-bottom: 20px;
     .title {
       font-size: 28px;
     }
@@ -216,6 +222,13 @@ a {
     overflow: auto;
     @media only screen and (max-width: 767px) {
       position: initial;
+    }
+  }
+  .app-mobile {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+      display: initial;
     }
   }
 }

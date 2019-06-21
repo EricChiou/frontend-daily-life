@@ -1,5 +1,13 @@
 export default {
   article: {
+    reactPropsAndState: {
+      title: 'React 的 props 與 state',
+      date: '2019 / 04 / 29',
+      summary:
+        '介紹 React 中的 props 與 state，以及使用方法',
+      link: '/react/props-state',
+      name: 'props-state'
+    },
     rwd: {
       title: '響應式網頁設計 RWD',
       date: '2019 / 04 / 24',

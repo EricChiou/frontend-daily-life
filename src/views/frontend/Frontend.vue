@@ -20,30 +20,10 @@ import Cons from '../../util/constants';
 export default {
   data: () => ({
     article: [
-      {
-        title: Cons.article.rwd.title,
-        date: Cons.article.rwd.date,
-        summary: Cons.article.rwd.summary,
-        link: Cons.article.rwd.link
-      },
-      {
-        title: Cons.article.htmlSetting.title,
-        date: Cons.article.htmlSetting.date,
-        summary: Cons.article.htmlSetting.summary,
-        link: Cons.article.htmlSetting.link
-      },
-      {
-        title: Cons.article.frontendTrend.title,
-        date: Cons.article.frontendTrend.date,
-        summary: Cons.article.frontendTrend.summary,
-        link: Cons.article.frontendTrend.link
-      },
-      {
-        title: Cons.article.frontendNotebook.title,
-        date: Cons.article.frontendNotebook.date,
-        summary: Cons.article.frontendNotebook.summary,
-        link: Cons.article.frontendNotebook.link
-      }
+      Cons.article.rwd,
+      Cons.article.htmlSetting,
+      Cons.article.frontendTrend,
+      Cons.article.frontendNotebook
     ]
   })
 };

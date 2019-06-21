@@ -19,14 +19,7 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.jenkins.title,
-        date: Cons.article.jenkins.date,
-        summary: Cons.article.jenkins.summary,
-        link: Cons.article.jenkins.link
-      }
-    ]
+    article: [Cons.article.jenkins]
   })
 };
 </script>
