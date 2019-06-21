@@ -52,7 +52,7 @@
         <div class="text">
           state 是儲存元件自己的資料或狀態，當 state 改變時才會觸發 render。
           <br>
-          <br>
+          <br>使用 setState() 修改 state：
           <div class="code-area">
             import React, { Component } from 'react';
             <br>
