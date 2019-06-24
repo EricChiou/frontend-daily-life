@@ -1,5 +1,13 @@
 export default {
   article: {
+    vueLazyLoading: {
+      title: 'Vue 的 Lazy Loading',
+      date: '2019 / 05 / 01',
+      summary:
+        '利用 Vue 的異步組件功能及 Webpack 的分割程式碼功能達成 Vue 的 Lazy Loading',
+      link: '/vue/lazy-loading',
+      name: 'lazy-loading'
+    },
     reactPropsAndState: {
       title: 'React 的 props 與 state',
       date: '2019 / 04 / 29',

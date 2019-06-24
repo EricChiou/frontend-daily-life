@@ -19,7 +19,7 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [Cons.article.vueNotebook]
+    article: [Cons.article.vueLazyLoading, Cons.article.vueNotebook]
   })
 };
 </script>

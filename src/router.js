@@ -15,19 +15,20 @@ import VueView from './views/vue/Vue.vue';
 import Other from './views/other/Other.vue';
 // article
 // frontend
-import FrontendTrend from './views/frontend/article/FrontendTrend.vue';
-import HtmlSetting from './views/frontend/article/HtmlSetting.vue';
-import RWD from './views/frontend/article/RWD.vue';
-import FrontendNotebook from './views/frontend/article/FrontendNotebook.vue';
+const FrontendTrend = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendTrend.vue');
+const HtmlSetting = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/HtmlSetting.vue');
+const RWD = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/RWD.vue');
+const FrontendNotebook = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendNotebook.vue');
 // angular
-import NgNotebook from './views/angular/article/NgNotebook.vue';
+const NgNotebook = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
 // react
-import ReactNotebook from './views/react/article/ReactNotebook.vue';
-import ReactPropsAndState from './views/react/article/ReactPropsAndState.vue';
+const ReactNotebook = () => import(/* webpackChunkName: "react" */ './views/react/article/ReactNotebook.vue');
+const ReactPropsAndState = () => import(/* webpackChunkName: "react" */ './views/react/article/ReactPropsAndState.vue');
 // vue
-import VueNotebook from './views/vue/article/VueNotebook.vue';
+const VueNotebook = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueNotebook.vue');
+const VueLazyLoading = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueLazyLoading.vue');
 // other
-import Jenkins from './views/other/article/Jenkins.vue';
+const Jenkins = () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
 
 Vue.use(Router);
 
@@ -123,6 +124,11 @@ export default new Router({
       path: Cons.article.vueNotebook.link,
       name: Cons.article.vueNotebook.name,
       component: VueNotebook
+    },
+    {
+      path: Cons.article.vueLazyLoading.link,
+      name: Cons.article.vueLazyLoading.name,
+      component: VueLazyLoading
     },
     // other
     {
