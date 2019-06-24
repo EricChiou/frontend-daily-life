@@ -6,6 +6,9 @@
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
       <div class="content">
+        當網站內容越來越多時，打包出來的 Javascript 檔案會越來越大，影響頁面載入，因此需要將不同路由的組件分割成不同的 Javascript 檔來載入，以此來提高網站效能。
+        <br>
+        <br>
         <div class="sub-header">Vue 的異步組件</div>
         <hr>
         <div class="text">
