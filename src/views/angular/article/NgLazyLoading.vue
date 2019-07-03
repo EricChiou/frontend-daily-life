@@ -79,7 +79,7 @@
         <div class="sub-header">Step 3. 在 root 的 Router 中設定要 Lazy Loading 的 Module</div>
         <hr />app-routing.module.ts：
         <div class="code-area">
-          <br />const routes: Routes = [
+          const routes: Routes = [
           <br />&nbsp;&nbsp;...
           <br />&nbsp;&nbsp;{
           <br />&nbsp;&nbsp;&nbsp;&nbsp;path: 'lazyloading',
