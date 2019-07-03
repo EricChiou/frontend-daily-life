@@ -19,7 +19,14 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [Cons.article.jenkins]
-  })
+    article: []
+  }),
+  created() {
+    Object.keys(Cons.article).forEach(key => {
+      if (Cons.article[key].category === 'other') {
+        this.article.push(Cons.article[key]);
+      }
+    });
+  }
 };
 </script>

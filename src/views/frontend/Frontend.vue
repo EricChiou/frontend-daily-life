@@ -19,13 +19,15 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      Cons.article.rwd,
-      Cons.article.htmlSetting,
-      Cons.article.frontendTrend,
-      Cons.article.frontendNotebook
-    ]
-  })
+    article: []
+  }),
+  created() {
+    Object.keys(Cons.article).forEach(key => {
+      if (Cons.article[key].category === 'frontend') {
+        this.article.push(Cons.article[key]);
+      }
+    });
+  }
 };
 </script>
 

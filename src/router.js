@@ -21,6 +21,7 @@ const RWD = () => import(/* webpackChunkName: "frontend" */ './views/frontend/ar
 const FrontendNotebook = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendNotebook.vue');
 // angular
 const NgNotebook = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
+const NgLazyLoading = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgLazyLoading.vue');
 // react
 const ReactNotebook = () => import(/* webpackChunkName: "react" */ './views/react/article/ReactNotebook.vue');
 const ReactPropsAndState = () => import(/* webpackChunkName: "react" */ './views/react/article/ReactPropsAndState.vue');
@@ -107,6 +108,11 @@ export default new Router({
       path: Cons.article.ngNotebook.link,
       name: Cons.article.ngNotebook.name,
       component: NgNotebook
+    },
+    {
+      path: Cons.article.ngLazLoading.link,
+      name: Cons.article.ngLazLoading.name,
+      component: NgLazyLoading
     },
     // react
     {

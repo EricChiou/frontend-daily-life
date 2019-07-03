@@ -65,7 +65,7 @@ export default {
       width: 300px;
       max-width: calc(90vw);
       margin: 0 5vw;
-      padding-top: 20px;
+      padding-top: 5px;
       font-size: 40px;
       font-weight: bold;
       font-style: italic;

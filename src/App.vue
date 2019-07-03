@@ -2,7 +2,7 @@
   <div id="app">
     <Menu></Menu>
     <div class="main">
-      <router-view/>
+      <router-view />
     </div>
     <div class="app-mobile">
       <MenuFooter></MenuFooter>
@@ -24,6 +24,8 @@ export default {
 
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
 html,
 body {
   margin: 0;
@@ -155,6 +157,7 @@ a {
       background-color: #eeeeee;
       border-radius: 4px;
       .code {
+        white-space: nowrap;
         overflow: auto;
       }
       .copy {
@@ -212,7 +215,8 @@ a {
   }
 }
 #app {
-  font-family: Helvetica, Arial, Sans-Serif, Microsoft JhengHei;
+  font-family: 'Noto Sans TC', Helvetica, Arial, Sans-Serif,
+    'Microsoft JhengHei';
   .main {
     position: fixed;
     top: 0;
