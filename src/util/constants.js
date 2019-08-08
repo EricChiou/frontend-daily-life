@@ -58,7 +58,7 @@ export default {
     jenkins: {
       category: 'other',
       title: 'Jenkins 各種相關設定',
-      date: '2019 / 04 / 29',
+      date: '2019 / 04 / 18',
       summary:
         '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案。',
       link: '/other/jenkins',

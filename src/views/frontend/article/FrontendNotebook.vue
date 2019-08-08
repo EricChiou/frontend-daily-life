@@ -12,6 +12,7 @@
           <div class="code-area">
             <div class="code">
               &lt;html lang="zh"&gt;
+              <br />
               <br />&lt;meta charset="utf-8"&gt;
               <br />&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"&gt;
               <br />&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
