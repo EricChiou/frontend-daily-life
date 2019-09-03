@@ -41,6 +41,10 @@ export default {
       width: 640px;
       max-width: 100%;
       min-height: calc(100vh - 82px);
+
+      @media only screen and (max-width: 767px) {
+        min-height: 100vh;
+      }
     }
   }
 }
