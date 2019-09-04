@@ -11,9 +11,10 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'linebreak-style': 0,
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['off'],
     'max-len': ['off'],
-    'arrow-parens': ['off']
+    'arrow-parens': ['off'],
+    'operator-linebreak': ['error', 'after']
   },
   parserOptions: {
     parser: 'babel-eslint',

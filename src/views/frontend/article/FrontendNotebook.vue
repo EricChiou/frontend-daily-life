@@ -13,9 +13,16 @@
             <div class="code">
               &lt;html lang="zh"&gt;
               <br />
-              <br />&lt;meta charset="utf-8"&gt;
-              <br />&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"&gt;
-              <br />&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+              <br />&lt;head&gt;
+              <br />&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
+              <br />&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"&gt;
+              <br />&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+              <br />&lt;/head&gt;
+              <br />
+              <br />&lt;body&gt;
+              <br />&lt;/body&gt;
+              <br />
+              <br />&lt;/html&gt;
             </div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg" />

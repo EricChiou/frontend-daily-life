@@ -159,6 +159,10 @@ a {
       .code {
         white-space: nowrap;
         overflow: auto;
+
+        .comment {
+          color: #009900;
+        }
       }
       .copy {
         position: absolute;

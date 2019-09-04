@@ -19,6 +19,7 @@ const FrontendTrend = () => import(/* webpackChunkName: "frontend" */ './views/f
 const HtmlSetting = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/HtmlSetting.vue');
 const RWD = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/RWD.vue');
 const FrontendNotebook = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendNotebook.vue');
+const ESLint = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/ESLint.vue');
 // angular
 const NgNotebook = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
 const NgLazyLoading = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgLazyLoading.vue');
@@ -102,6 +103,11 @@ export default new Router({
       path: Cons.article.frontendNotebook.link,
       name: Cons.article.frontendNotebook.name,
       component: FrontendNotebook
+    },
+    {
+      path: Cons.article.esLint.link,
+      name: Cons.article.esLint.name,
+      component: ESLint
     },
     // angular
     {

@@ -1,6 +1,15 @@
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    esLint: {
+      category: 'frontend',
+      title: 'ESLint 筆記本',
+      date: '2019 / 05 / 07',
+      summary:
+        '記錄個人愛用的 ESLint 規則',
+      link: '/frontend/eslint',
+      name: 'eslint'
+    },
     ngLazLoading: {
       category: 'angular',
       title: 'Angular 的 Lazy Loading',
