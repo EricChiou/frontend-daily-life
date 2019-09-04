@@ -183,7 +183,7 @@
                 </tr>
                 <tr>
                   <td>狀態管理</td>
-                  <td>Redux</td>
+                  <td>Hooks</td>
                   <td>Ngrx</td>
                   <td>Vuex</td>
                 </tr>
