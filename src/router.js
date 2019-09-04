@@ -29,6 +29,7 @@ const ReactPropsAndState = () => import(/* webpackChunkName: "react" */ './views
 // vue
 const VueNotebook = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueNotebook.vue');
 const VueLazyLoading = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueLazyLoading.vue');
+const VueProps = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueProps.vue');
 // other
 const Jenkins = () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
 
@@ -141,6 +142,11 @@ export default new Router({
       path: Cons.article.vueLazyLoading.link,
       name: Cons.article.vueLazyLoading.name,
       component: VueLazyLoading
+    },
+    {
+      path: Cons.article.vueProps.link,
+      name: Cons.article.vueProps.name,
+      component: VueProps
     },
     // other
     {

@@ -1,6 +1,15 @@
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    vueProps: {
+      category: 'vue',
+      title: 'Vue Props',
+      date: '2019 / 05 / 09',
+      summary:
+        '介紹 Vue Props 用途及使用方法',
+      link: '/vue/vue-props',
+      name: 'vueProps'
+    },
     esLint: {
       category: 'frontend',
       title: 'ESLint 筆記本',
