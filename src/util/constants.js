@@ -6,7 +6,7 @@ export default {
       title: 'SEO 設定',
       date: '2019 / 05 / 12',
       summary:
-        '介紹 SEO，以及設定 SEO 的各種 tag',
+        '講解設定 SEO 時的各種注意事項，以及 SEO 的各種 tag',
       link: '/frontend/seo',
       name: 'seo'
     },

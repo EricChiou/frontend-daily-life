@@ -11,7 +11,7 @@
           <span class="keyword" @click="quickSearch('Angular')">Angular</span>、
           <span class="keyword" @click="quickSearch('React')">React</span>、
           <span class="keyword" @click="quickSearch('Vue')">Vue</span>、
-          <span class="keyword" @click="quickSearch('HTML')">SEO</span>
+          <span class="keyword" @click="quickSearch('SEO')">SEO</span>
         </div>
         <div class="search">
           <input ref="search" type="text" placeholder="搜尋文章標題、摘要" @change="search" />
