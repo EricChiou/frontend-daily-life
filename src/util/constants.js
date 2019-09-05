@@ -1,6 +1,15 @@
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    seo: {
+      category: 'frontend',
+      title: 'SEO 設定',
+      date: '2019 / 05 / 12',
+      summary:
+        '介紹 SEO，以及設定 SEO 的各種 tag',
+      link: '/frontend/seo',
+      name: 'seo'
+    },
     vueProps: {
       category: 'vue',
       title: 'Vue Props',

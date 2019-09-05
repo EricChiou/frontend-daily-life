@@ -11,7 +11,8 @@
         <div class="text">
           <div class="code-area">
             <div class="code">
-              &lt;html lang="zh"&gt;
+              &lt;!DOCTYPE html&gt;
+              <br />&lt;html lang="zh"&gt;
               <br />
               <br />&lt;head&gt;
               <br />&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
