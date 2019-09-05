@@ -14,7 +14,7 @@
           <br />&emsp;&emsp;第二點，雖然設定 tag 很重要，但是最重要的依然是把網站內容做好，現在的搜尋引擎越來越聰明，要想在 tag 設定騙過它越來越困難，因此把內容做好雖然聽起來像廢話，但卻是最有效的方法。例如每個頁面都要有能回到首頁的連結，這時搜尋引擎就能很清楚的知道哪一個是首頁，進而顯示在搜尋結果中。
         </div>
         <br />
-        <div class="sub-header">Tag 設定</div>
+        <div class="sub-header">各種 Tag 設定</div>
         <hr />
         <div class="text">
           <div class="code-area">

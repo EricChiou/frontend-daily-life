@@ -1,6 +1,15 @@
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    rsa: {
+      category: 'other',
+      title: 'RSA 金鑰',
+      date: '2019 / 05 / 16',
+      summary:
+        '在 Ubuntu 18.04 上使用 openssl 產生 RSA 金鑰',
+      link: '/other/rsa',
+      name: 'seo'
+    },
     seo: {
       category: 'frontend',
       title: 'SEO 設定',

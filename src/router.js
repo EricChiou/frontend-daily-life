@@ -33,6 +33,7 @@ const VueLazyLoading = () => import(/* webpackChunkName: "vue" */ './views/vue/a
 const VueProps = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueProps.vue');
 // other
 const Jenkins = () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
+const RSA = () => import(/* webpackChunkName: "other" */ './views/other/article/RSA.vue');
 
 Vue.use(Router);
 
@@ -159,6 +160,11 @@ export default new Router({
       path: Cons.article.jenkins.link,
       name: Cons.article.jenkins.name,
       component: Jenkins
+    },
+    {
+      path: Cons.article.rsa.link,
+      name: Cons.article.rsa.name,
+      component: RSA
     }
   ]
 });

@@ -73,7 +73,7 @@ export default {
   @media only screen and (max-width: 767px) {
     position: relative;
     width: 100%;
-    height: 295px;
+    height: 275px;
     .title {
       max-width: calc(90vw);
       margin: 0 5vw;
@@ -94,6 +94,7 @@ export default {
     }
     .description {
       margin: 5px 6vw 0 6vw;
+      height: 48px;
       font-size: 16px;
     }
     .mobile {
