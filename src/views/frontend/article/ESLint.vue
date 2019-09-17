@@ -47,6 +47,10 @@
               <br />
               <span class="comment">// 字串使用單引號</span>
               <br />'quotes': ['error', 'single']
+              <br />
+              <br />
+              <span class="comment">// Function 後的括號不要有空格</span>
+              <br />'space-before-function-paren': ['error', 'never']
             </div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg" />
