@@ -34,10 +34,9 @@
             設定的詳細說明可以看這裡
             <img src="../../../assets/images/link_icon.png" height="12" />
           </router-link>
-          <br />
-          <br />
         </div>
-        <div class="sub-header">個人愛用的 CSS 設定</div>
+        <br />
+        <div class="sub-header">個人愛用的排版及字型設定</div>
         <hr />
         <div class="text">
           <div class="code-area">
@@ -46,9 +45,84 @@
               <br />
               <br />html,
               <br />body {
+              <br />&nbsp;&nbsp;position: relative;
               <br />&nbsp;&nbsp;margin: 0;
               <br />&nbsp;&nbsp;padding: 0;
+              <br />&nbsp;&nbsp;width: 100vw;
+              <br />&nbsp;&nbsp;height: 100vh;
               <br />&nbsp;&nbsp;font-family: 'Noto Sans TC', Helvetica, Arial, Sans-Serif, 'Microsoft JhengHei';
+              <br />&nbsp;&nbsp;overflow: auto;
+              <br />}
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="sub-header">RWD 用的 SCSS 設定</div>
+        <hr />
+        <div class="text">
+          <div class="code-area">
+            <div class="code">
+              @mixin breakpoint($width) {
+              <br />&nbsp;&nbsp;@if $width==xl {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 1200px) {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />&nbsp;&nbsp;}
+              <br />
+              <br />&nbsp;&nbsp;@else if $width==l {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 1023px) {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />&nbsp;&nbsp;}
+              <br />
+              <br />&nbsp;&nbsp;@else if $width==m {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 767px) {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />&nbsp;&nbsp;}
+              <br />
+              <br />&nbsp;&nbsp;@else if $width==s {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 479px) {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />&nbsp;&nbsp;}
+              <br />}
+            </div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="sub-header">顏色設定用的 SCSS 設定</div>
+        <hr />
+        <div class="text">
+          <div class="code-area">
+            <div class="code">
+              $colors: (black: (base:#000000, light:#454545),
+              <br />&nbsp;&nbsp;white:(base:#ffffff, dark:#dddddd));
+              <br />
+              <br />@function theme($color, $type: 'base', $map: $colors) {
+              <br />&nbsp;&nbsp;@if (map-has-key($map, $color)) {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;$value: map-get($map, $color);
+              <br />
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;@if type-of($value)==color {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@return $value;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;@if (map-has-key($value, $type)) {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$value: map-get($value, $type);
+              <br />
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@if type-of($value)==color {
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@return $value;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br />&nbsp;&nbsp;}
+              <br />
+              <br />&nbsp;&nbsp;@return null;
               <br />}
             </div>
             <div class="copy" @click="copy">

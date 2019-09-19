@@ -129,10 +129,10 @@ export default {
     },
     frontendNotebook: {
       category: 'frontend',
-      title: 'HTML 筆記本',
+      title: '前端筆記本',
       date: '2019 / 04 / 09',
       summary:
-        '記錄 HTML 常用到及自己愛用的設定',
+        '記錄一些常用或個人愛用的 HTML 及 CSS 設定',
       link: '/frontend/notebook',
       name: 'frontendNotebook'
     }
