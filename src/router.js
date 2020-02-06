@@ -21,6 +21,7 @@ const RWD = () => import(/* webpackChunkName: "frontend" */ './views/frontend/ar
 const FrontendNotebook = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendNotebook.vue');
 const ESLint = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/ESLint.vue');
 const SEO = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/SEO.vue');
+const FrontendSharing = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendSharing.vue');
 // angular
 const NgNotebook = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
 const NgLazyLoading = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgLazyLoading.vue');
@@ -116,6 +117,11 @@ export default new Router({
       path: Cons.article.seo.link,
       name: Cons.article.seo.name,
       component: SEO
+    },
+    {
+      path: Cons.article.frontendSharing.link,
+      name: Cons.article.frontendSharing.name,
+      component: FrontendSharing
     },
     // angular
     {

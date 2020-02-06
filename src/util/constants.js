@@ -1,6 +1,15 @@
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    frontendSharing: {
+      category: 'frontend',
+      title: '利用 RxJS 的 Subject 在各元件之間進行溝通',
+      date: '2019 / 06 / 22',
+      summary:
+        '有時會發生需要在非父子關係的元件之間進行溝通或數據交換，這時使用 Subject 來進行溝通會較方便。',
+      link: '/frontend/frontend-sharing',
+      name: 'frontend-sharing'
+    },
     rsa: {
       category: 'other',
       title: 'RSA 金鑰',
