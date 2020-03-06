@@ -15,18 +15,26 @@ import VueView from './views/vue/Vue.vue';
 import Other from './views/other/Other.vue';
 // article
 // frontend
-import FrontendTrend from './views/frontend/article/FrontendTrend.vue';
-import HtmlSetting from './views/frontend/article/HtmlSetting.vue';
-import RWD from './views/frontend/article/RWD.vue';
-import FrontendNotebook from './views/frontend/article/FrontendNotebook.vue';
+const FrontendTrend = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendTrend.vue');
+const HtmlSetting = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/HtmlSetting.vue');
+const RWD = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/RWD.vue');
+const FrontendNotebook = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendNotebook.vue');
+const ESLint = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/ESLint.vue');
+const SEO = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/SEO.vue');
+const FrontendSharing = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendSharing.vue');
 // angular
-import NgNotebook from './views/angular/article/NgNotebook.vue';
+const NgNotebook = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
+const NgLazyLoading = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgLazyLoading.vue');
 // react
-import ReactNotebook from './views/react/article/ReactNotebook.vue';
+const ReactNotebook = () => import(/* webpackChunkName: "react" */ './views/react/article/ReactNotebook.vue');
+const ReactPropsAndState = () => import(/* webpackChunkName: "react" */ './views/react/article/ReactPropsAndState.vue');
 // vue
-import VueNotebook from './views/vue/article/VueNotebook.vue';
+const VueNotebook = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueNotebook.vue');
+const VueLazyLoading = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueLazyLoading.vue');
+const VueProps = () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueProps.vue');
 // other
-import Jenkins from './views/other/article/Jenkins.vue';
+const Jenkins = () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
+const RSA = () => import(/* webpackChunkName: "other" */ './views/other/article/RSA.vue');
 
 Vue.use(Router);
 
@@ -100,11 +108,31 @@ export default new Router({
       name: Cons.article.frontendNotebook.name,
       component: FrontendNotebook
     },
+    {
+      path: Cons.article.esLint.link,
+      name: Cons.article.esLint.name,
+      component: ESLint
+    },
+    {
+      path: Cons.article.seo.link,
+      name: Cons.article.seo.name,
+      component: SEO
+    },
+    {
+      path: Cons.article.frontendSharing.link,
+      name: Cons.article.frontendSharing.name,
+      component: FrontendSharing
+    },
     // angular
     {
       path: Cons.article.ngNotebook.link,
       name: Cons.article.ngNotebook.name,
       component: NgNotebook
+    },
+    {
+      path: Cons.article.ngLazLoading.link,
+      name: Cons.article.ngLazLoading.name,
+      component: NgLazyLoading
     },
     // react
     {
@@ -112,17 +140,37 @@ export default new Router({
       name: Cons.article.reactNotebook.name,
       component: ReactNotebook
     },
+    {
+      path: Cons.article.reactPropsAndState.link,
+      name: Cons.article.reactPropsAndState.name,
+      component: ReactPropsAndState
+    },
     // vue
     {
       path: Cons.article.vueNotebook.link,
       name: Cons.article.vueNotebook.name,
       component: VueNotebook
     },
+    {
+      path: Cons.article.vueLazyLoading.link,
+      name: Cons.article.vueLazyLoading.name,
+      component: VueLazyLoading
+    },
+    {
+      path: Cons.article.vueProps.link,
+      name: Cons.article.vueProps.name,
+      component: VueProps
+    },
     // other
     {
       path: Cons.article.jenkins.link,
       name: Cons.article.jenkins.name,
       component: Jenkins
+    },
+    {
+      path: Cons.article.rsa.link,
+      name: Cons.article.rsa.name,
+      component: RSA
     }
   ]
 });

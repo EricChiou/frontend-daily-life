@@ -58,5 +58,22 @@ export default {};
     margin-bottom: 5px;
     font-size: 16px;
   }
+
+  @media only screen and (max-width: 767px) {
+    position: initial;
+    padding: 5px 0 8px 0;
+    color: #eeeeee;
+    background-color: #303841;
+
+    ul {
+      a {
+        color: #eeeeee;
+      }
+    }
+
+    .rights-reserved {
+      margin-bottom: 0px;
+    }
+  }
 }
 </style>

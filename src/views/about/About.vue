@@ -2,16 +2,16 @@
   <div id="about-me-container">
     <div class="title">關於我</div>
     <div class="content">
-      前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
+      <iframe src="https://www.calicomoo.ml/about?color=#3a4750&fontSize=18px"></iframe>
+      <!-- 前端工程師，平常喜歡玩電腦、看電影、寫寫自己的網站、玩貓！(´ω`)
       <div class="about-img">
         <img src="../../assets/images/play_cat.jpg">
       </div>主修 Angular2，對於 React、Vue 也略有涉略。
       <br>懂一些後端，主要使用過 Golang 和 Nodejs，也寫過 Java 和 Python。
       <br>
-      <br>可是其實以前在研究所寫的是 c (遮臉)。
       <br>
       <br>我的 Email：
-      <a :href="mailTo">miatlab@gmail.com</a>
+      <a :href="mailTo">miatlab@gmail.com</a>-->
     </div>
   </div>
 </template>
@@ -36,12 +36,14 @@ export default {
   }
   .content {
     margin: 10px 15px;
-    font-size: 18px;
-    .about-img {
-      margin-top: 2px;
-      max-width: 560px;
-      img {
-        max-width: 100%;
+    iframe {
+      border: none;
+      width: 640px;
+      max-width: 100%;
+      min-height: calc(100vh - 82px);
+
+      @media only screen and (max-width: 767px) {
+        min-height: 100vh;
       }
     }
   }

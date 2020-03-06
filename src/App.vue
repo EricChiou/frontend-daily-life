@@ -2,23 +2,30 @@
   <div id="app">
     <Menu></Menu>
     <div class="main">
-      <router-view/>
+      <router-view />
+    </div>
+    <div class="app-mobile">
+      <MenuFooter></MenuFooter>
     </div>
   </div>
 </template>
 
 <script>
 import Menu from './components/menu/Menu.vue';
+import MenuFooter from './components/menu/menu-components/MenuFooter.vue';
 
 export default {
   components: {
-    Menu
+    Menu,
+    MenuFooter
   }
 };
 </script>
 
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
 html,
 body {
   margin: 0;
@@ -123,6 +130,7 @@ a {
   }
   .content {
     margin: 5px 15px 5px 15px;
+    padding-bottom: 100px;
     font-size: 18px;
     line-height: 24px;
     color: #303841;
@@ -150,7 +158,12 @@ a {
       background-color: #eeeeee;
       border-radius: 4px;
       .code {
+        white-space: nowrap;
         overflow: auto;
+
+        .comment {
+          color: #009900;
+        }
       }
       .copy {
         position: absolute;
@@ -192,6 +205,7 @@ a {
     }
   }
   @media only screen and (max-width: 767px) {
+    margin-bottom: 20px;
     .title {
       font-size: 28px;
     }
@@ -206,7 +220,8 @@ a {
   }
 }
 #app {
-  font-family: Helvetica, Arial, Sans-Serif, Microsoft JhengHei;
+  font-family: 'Noto Sans TC', Helvetica, Arial, Sans-Serif,
+    'Microsoft JhengHei';
   .main {
     position: fixed;
     top: 0;
@@ -216,6 +231,13 @@ a {
     overflow: auto;
     @media only screen and (max-width: 767px) {
       position: initial;
+    }
+  }
+  .app-mobile {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+      display: initial;
     }
   }
 }

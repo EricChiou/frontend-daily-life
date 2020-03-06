@@ -1,4 +1,5 @@
 # frontend-daily-life
+Demo: https://www.calicomoo.ml/frontend-daily-life/
 
 ## Project setup
 ```

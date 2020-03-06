@@ -19,14 +19,14 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.vueNotebook.title,
-        date: Cons.article.vueNotebook.date,
-        summary: Cons.article.vueNotebook.summary,
-        link: Cons.article.vueNotebook.link
+    article: []
+  }),
+  created() {
+    Object.keys(Cons.article).forEach(key => {
+      if (Cons.article[key].category === 'vue') {
+        this.article.push(Cons.article[key]);
       }
-    ]
-  })
+    });
+  }
 };
 </script>

@@ -19,14 +19,14 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.ngNotebook.title,
-        date: Cons.article.ngNotebook.date,
-        summary: Cons.article.ngNotebook.summary,
-        link: Cons.article.ngNotebook.link
+    article: []
+  }),
+  created() {
+    Object.keys(Cons.article).forEach(key => {
+      if (Cons.article[key].category === 'angular') {
+        this.article.push(Cons.article[key]);
       }
-    ]
-  })
+    });
+  }
 };
 </script>

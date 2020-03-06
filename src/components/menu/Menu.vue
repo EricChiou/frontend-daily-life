@@ -2,13 +2,18 @@
   <div id="menu-container">
     <router-link :to="{name:'home'}">
       <div class="title">
-        <div class="first-line">Frontend</div>
-        <div class="second-line">Daily Life</div>
+        <img class="logo" src="../../assets/images/logo.png" />
+        <div class="text">
+          <div class="first-line">Frontend</div>
+          <div class="second-line">Daily Life</div>
+        </div>
       </div>
     </router-link>
     <div class="description">記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。</div>
     <MenuList></MenuList>
-    <MenuFooter></MenuFooter>
+    <div class="mobile">
+      <MenuFooter></MenuFooter>
+    </div>
   </div>
 </template>
 
@@ -32,15 +37,25 @@ export default {
   background-color: #303841;
   .title {
     margin: 10vh 40px 0 40px;
-    font-size: 46px;
+    font-size: 42px;
     font-weight: bold;
     font-style: italic;
     cursor: pointer;
-    .first-line {
-      text-align: left;
+    .logo {
+      width: 100px;
+      vertical-align: middle;
     }
-    .second-line {
-      text-align: right;
+    .text {
+      display: inline-block;
+      margin-left: 10px;
+      width: calc(100% - 110px);
+      vertical-align: middle;
+      .first-line {
+        text-align: left;
+      }
+      .second-line {
+        text-align: right;
+      }
     }
     &:hover {
       text-decoration: underline;
@@ -54,23 +69,36 @@ export default {
   a {
     color: #ffffff;
   }
+
   @media only screen and (max-width: 767px) {
     position: relative;
     width: 100%;
-    height: 380px;
+    height: 275px;
     .title {
-      width: 300px;
       max-width: calc(90vw);
       margin: 0 5vw;
-      padding-top: 20px;
-      font-size: 40px;
+      padding-top: 5px;
+      font-size: 32px;
       font-weight: bold;
       font-style: italic;
-      text-align: center;
+      text-align: left;
+      .logo {
+        width: 85px;
+        vertical-align: middle;
+      }
+      .text {
+        margin-left: 15px;
+        width: calc(100% - 100px);
+        max-width: 260px;
+      }
     }
     .description {
       margin: 5px 6vw 0 6vw;
+      height: 48px;
       font-size: 16px;
+    }
+    .mobile {
+      display: none;
     }
   }
 }

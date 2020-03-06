@@ -36,7 +36,7 @@ export default {};
       text-decoration: none;
     }
     li {
-      margin: 5px 56px;
+      margin: 0px 56px;
       padding: 5px 5px;
       font-size: 20px;
       list-style-type: square;
@@ -46,7 +46,7 @@ export default {};
       }
       @media only screen and (max-width: 767px) {
         float: left;
-        margin: 5px;
+        margin: 2px;
         margin-right: 20px;
         width: calc(50% - 35px);
         height: 23px;
@@ -55,7 +55,7 @@ export default {};
     }
   }
   @media only screen and (max-width: 767px) {
-    margin-top: -8px;
+    margin-top: -15px;
   }
 }
 </style>

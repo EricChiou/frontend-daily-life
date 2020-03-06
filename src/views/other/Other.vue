@@ -19,14 +19,14 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.jenkins.title,
-        date: Cons.article.jenkins.date,
-        summary: Cons.article.jenkins.summary,
-        link: Cons.article.jenkins.link
+    article: []
+  }),
+  created() {
+    Object.keys(Cons.article).forEach(key => {
+      if (Cons.article[key].category === 'other') {
+        this.article.push(Cons.article[key]);
       }
-    ]
-  })
+    });
+  }
 };
 </script>

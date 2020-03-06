@@ -19,14 +19,14 @@ import Cons from '../../util/constants';
 
 export default {
   data: () => ({
-    article: [
-      {
-        title: Cons.article.reactNotebook.title,
-        date: Cons.article.reactNotebook.date,
-        summary: Cons.article.reactNotebook.summary,
-        link: Cons.article.reactNotebook.link
+    article: []
+  }),
+  created() {
+    Object.keys(Cons.article).forEach(key => {
+      if (Cons.article[key].category === 'react') {
+        this.article.push(Cons.article[key]);
       }
-    ]
-  })
+    });
+  }
 };
 </script>
