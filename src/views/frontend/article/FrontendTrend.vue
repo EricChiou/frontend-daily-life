@@ -89,7 +89,6 @@
           </ul>
           <br />缺點：
           <ul>
-            <li>缺乏彈性：強制規定了程式寫法，無法視專案需求動態調整架構。</li>
             <li>遷移問題：由於使用 TypeScript，某些 JavaScript 組件可能無法順利地直接使用在 Angular 上。</li>
             <li>厚重：因為包含了所有功能，因此打包後的專案是最厚重的。</li>
             <li>學習曲線：需要學習 TypeScript，這得花上不少時間，當然對於一個全新的開發者是沒差的。</li>
@@ -184,7 +183,7 @@
                 <tr>
                   <td>狀態管理</td>
                   <td>Redux, Hooks</td>
-                  <td>NgRx, NgXs</td>
+                  <td>Service</td>
                   <td>Vuex</td>
                 </tr>
               </table>
