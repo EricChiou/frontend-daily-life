@@ -1,6 +1,15 @@
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    checkVariableType: {
+      category: 'frontend',
+      title: '使用 typeof 及 instanceof 判斷變數型別',
+      date: '2020 / 07 / 28',
+      summary:
+        '在判斷變數型別時常常會使用到 typeof 及 instanceof，因此在這說明 typeof 及 instanceof 的差別以及使用方法',
+      link: '/frontend/checkVariableType',
+      name: 'checkVariableType'
+    },
     frontendSharing: {
       category: 'frontend',
       title: '利用 RxJS 的 Subject 在各元件之間進行溝通',

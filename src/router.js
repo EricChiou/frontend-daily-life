@@ -22,6 +22,7 @@ const FrontendNotebook = () => import(/* webpackChunkName: "frontend" */ './view
 const ESLint = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/ESLint.vue');
 const SEO = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/SEO.vue');
 const FrontendSharing = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendSharing.vue');
+const CheckVariableType = () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/CheckVariableType.vue');
 // angular
 const NgNotebook = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
 const NgLazyLoading = () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgLazyLoading.vue');
@@ -122,6 +123,11 @@ export default new Router({
       path: Cons.article.frontendSharing.link,
       name: Cons.article.frontendSharing.name,
       component: FrontendSharing
+    },
+    {
+      path: Cons.article.checkVariableType.link,
+      name: Cons.article.checkVariableType.name,
+      component: CheckVariableType
     },
     // angular
     {
