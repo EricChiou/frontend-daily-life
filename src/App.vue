@@ -140,7 +140,7 @@ a {
       color: #3a4750;
     }
     .header {
-      font-size: 22px;
+      font-size: 24px;
     }
     .sub-header {
       font-size: 20px;

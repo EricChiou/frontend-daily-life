@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Cons from './util/constants';
+import Cons from './constants/constants';
 
 import Home from './views/Home.vue';
 import About from './views/about/About.vue';
@@ -36,6 +36,7 @@ const VueProps = () => import(/* webpackChunkName: "vue" */ './views/vue/article
 // other
 const Jenkins = () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
 const RSA = () => import(/* webpackChunkName: "other" */ './views/other/article/RSA.vue');
+const Screen = () => import(/* webpackChunkName: "other" */ './views/other/article/Screen.vue');
 
 Vue.use(Router);
 
@@ -177,6 +178,11 @@ export default new Router({
       path: Cons.article.rsa.link,
       name: Cons.article.rsa.name,
       component: RSA
+    },
+    {
+      path: Cons.article.screen.link,
+      name: Cons.article.screen.name,
+      component: Screen
     }
   ]
 });

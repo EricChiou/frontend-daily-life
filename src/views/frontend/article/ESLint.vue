@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import Cons from '../../../util/constants';
+import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
 export default {

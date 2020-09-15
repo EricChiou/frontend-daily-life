@@ -1,8 +1,25 @@
+const articleCategory = {
+  frontend: 'frontend',
+  angular: 'angular',
+  react: 'react',
+  vue: 'vue',
+  other: 'other',
+};
+
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    screen: {
+      category: articleCategory.other,
+      title: '使用 Screen 在背景執行終端機',
+      date: '2020 / 08 / 15',
+      summary:
+        '介紹如何在 Linux 中安裝 Screen，以及各種指令操作',
+      link: '/other/screen',
+      name: 'screen'
+    },
     checkVariableType: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: '使用 typeof 及 instanceof 判斷變數型別',
       date: '2020 / 07 / 28',
       summary:
@@ -11,16 +28,16 @@ export default {
       name: 'checkVariableType'
     },
     frontendSharing: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: '利用 RxJS 的 Subject 在各元件之間進行溝通',
       date: '2019 / 06 / 22',
       summary:
-        '有時會發生需要在非父子關係的元件之間進行溝通或數據交換，這時使用 Subject 來進行溝通會較方便。',
+        '有時會發生需要在非父子關係的元件之間進行溝通或數據交換，這時使用 Subject 來進行溝通會較方便',
       link: '/frontend/frontend-sharing',
       name: 'frontend-sharing'
     },
     rsa: {
-      category: 'other',
+      category: articleCategory.other,
       title: 'RSA 金鑰',
       date: '2019 / 05 / 16',
       summary:
@@ -29,7 +46,7 @@ export default {
       name: 'seo'
     },
     seo: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: 'SEO 設定',
       date: '2019 / 05 / 12',
       summary:
@@ -38,7 +55,7 @@ export default {
       name: 'seo'
     },
     vueProps: {
-      category: 'vue',
+      category: articleCategory.vue,
       title: 'Vue Props',
       date: '2019 / 05 / 09',
       summary:
@@ -47,7 +64,7 @@ export default {
       name: 'vueProps'
     },
     esLint: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: 'ESLint 筆記本',
       date: '2019 / 05 / 07',
       summary:
@@ -56,7 +73,7 @@ export default {
       name: 'eslint'
     },
     ngLazLoading: {
-      category: 'angular',
+      category: articleCategory.angular,
       title: 'Angular 的 Lazy Loading',
       date: '2019 / 05 / 05',
       summary:
@@ -65,7 +82,7 @@ export default {
       name: 'ng-lazy-loading'
     },
     vueLazyLoading: {
-      category: 'vue',
+      category: articleCategory.vue,
       title: 'Vue 的 Lazy Loading',
       date: '2019 / 05 / 01',
       summary:
@@ -74,7 +91,7 @@ export default {
       name: 'vue-lazy-loading'
     },
     reactPropsAndState: {
-      category: 'react',
+      category: articleCategory.react,
       title: 'React 的 props 與 state',
       date: '2019 / 04 / 29',
       summary:
@@ -83,7 +100,7 @@ export default {
       name: 'react-props-state'
     },
     rwd: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: '響應式網頁設計 RWD',
       date: '2019 / 04 / 24',
       summary:
@@ -92,7 +109,7 @@ export default {
       name: 'rwd'
     },
     htmlSetting: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: 'HTML 內的各種設定',
       date: '2019 / 04 / 23',
       summary:
@@ -101,7 +118,7 @@ export default {
       name: 'html-setting'
     },
     frontendTrend: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: '前端發展',
       date: '2019 / 04 / 19',
       summary:
@@ -110,16 +127,16 @@ export default {
       name: 'frontend-trend'
     },
     jenkins: {
-      category: 'other',
+      category: articleCategory.other,
       title: 'Jenkins 各種相關設定',
       date: '2019 / 04 / 18',
       summary:
-        '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案。',
+        '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案',
       link: '/other/jenkins',
       name: 'jenkins'
     },
     vueNotebook: {
-      category: 'vue',
+      category: articleCategory.vue,
       title: 'Vue 筆記本',
       date: '2019 / 04 / 09',
       summary:
@@ -128,7 +145,7 @@ export default {
       name: 'vueNotebook'
     },
     reactNotebook: {
-      category: 'react',
+      category: articleCategory.react,
       title: 'React 筆記本',
       date: '2019 / 04 / 09',
       summary:
@@ -137,7 +154,7 @@ export default {
       name: 'reactNotebook'
     },
     ngNotebook: {
-      category: 'angular',
+      category: articleCategory.angular,
       title: 'Angular 筆記本',
       date: '2019 / 04 / 09',
       summary:
@@ -146,7 +163,7 @@ export default {
       name: 'ngNotebook'
     },
     frontendNotebook: {
-      category: 'frontend',
+      category: articleCategory.frontend,
       title: '前端筆記本',
       date: '2019 / 04 / 09',
       summary:

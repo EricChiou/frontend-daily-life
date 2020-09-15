@@ -112,7 +112,7 @@
 </template>
 
 <script>
-import Cons from '../../../util/constants';
+import Cons from '../../../constants/constants';
 
 export default {
   data: () => ({ article: Cons.article.htmlSetting })
