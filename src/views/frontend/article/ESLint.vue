@@ -11,26 +11,24 @@
         <div class="text">
           <div class="code-area">
             <div class="code">
-              <span class="comment">// 關閉斷行規則，在 windows 及 unix 中開發會有不同的斷行符號，因此關閉此規則</span>
+              <span class="comment">// 關閉斷行規則，在 windows 及 linux 中開發會有不同的斷行符號，因此關閉此規則</span>
               <br />'linebreak-style': ['off'],
               <br />
               <br />
-              <span class="comment">// 關閉最末行逗號規則，看情況決定是否增加最末行逗號</span>
-              <br />'comma-dangle': ['off'],
+              <span class="comment">// 開啟多行末尾逗號規則</span>
+              <br />'comma-dangle': ['error', 'always-multiline'],
               <br />
               <br />
-              <span class="comment">// code 單行最大長度建議為 140 個字</span>
+              <span class="comment">// code 單行最大長度建議為 120 個字</span>
+              <br />'max-len': ['error', { 'code': 120 }],
               <br />
-              'max-len': ['error', { 'code': 140 }],
               <br />
-              <br />
-              <span class="comment">// 關閉箭頭函式規則，看情況決定如何使用</span>
-              <br />'arrow-parens': ['off'],
+              <span class="comment">// 箭頭函式規則，使用 'as-needed' 規則</span>
+              <br />'arrow-parens': ['error', 'as-needed'],
               <br />
               <br />
               <span class="comment">// 禁止對函式參數再賦予值，但是對 object 內的資料可以再賦予值</span>
-              <br />
-              'no-param-reassign': ['error', { 'props': false }],
+              <br />'no-param-reassign': ['error', { 'props': false }],
               <br />
               <br />
               <span class="comment">// 換行時將操作符放在行末</span>
