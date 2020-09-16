@@ -2,6 +2,7 @@
   <div id="ng-lazy-loading-container">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -83,7 +84,8 @@
           <br />&nbsp;&nbsp;...
           <br />&nbsp;&nbsp;{
           <br />&nbsp;&nbsp;&nbsp;&nbsp;path: 'lazyloading',
-          <br />&nbsp;&nbsp;&nbsp;&nbsp;loadChildren: () => import('./lazy-loading/lazy-loading.module').then(mod => mod.LazyLoadingModule)
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;
+          loadChildren: () => import('./lazy-loading/lazy-loading.module').then(mod => mod.LazyLoadingModule)
           <br />&nbsp;&nbsp;},
           <br />&nbsp;&nbsp;...
           <br />];
@@ -100,7 +102,10 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({ article: Cons.article.ngLazLoading }),
   methods: {
     copy(event) {
@@ -112,8 +117,8 @@ export default {
         }
         ele = ele.parentElement;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

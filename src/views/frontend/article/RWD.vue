@@ -2,6 +2,7 @@
   <div id="rwd-container">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -9,9 +10,11 @@
         <div class="header">何謂 RWD</div>
         <hr>
         <div class="text">
-          由於行動裝置及網路的興起，越來越多人是從手機、平板等行動裝置瀏覽網頁，而當初以有較大螢幕的桌面電腦為目標而設計的網站，面臨到一旦將畫面縮小到行動裝置上時，會變得非常難以操作，許多公司被迫另外開發專門為行動裝置而設計的網站，這提高了開發及維護成本。
+          由於行動裝置及網路的興起，越來越多人是從手機、平板等行動裝置瀏覽網頁，而當初以有較大螢幕的桌面電腦為目標而設計的網站，面臨到一旦將畫面縮小到行動裝置上時，
+          會變得非常難以操作，許多公司被迫另外開發專門為行動裝置而設計的網站，這提高了開發及維護成本。
           <br>
-          <br>RWD 就是在此情境下誕生的設計模式，整個網站的樣式設計(css)，必須隨著當下畫面的寬度而做動態的改變，如此一來就只須要維護一個網站，大大降低了開發及維護成本，也隨之產生了一些 RWD 的基本設計規則。
+          <br>RWD 就是在此情境下誕生的設計模式，整個網站的樣式設計(css)，必須隨著當下畫面的寬度而做動態的改變，如此一來就只須要維護一個網站，大大降低了開發及維護成本，
+          也隨之產生了一些 RWD 的基本設計規則。
           <br>
           <br>
         </div>
@@ -82,7 +85,10 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({ article: Cons.article.rwd }),
   methods: {
     copy(event) {
@@ -94,8 +100,8 @@ export default {
         }
         ele = ele.parentElement;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -2,6 +2,7 @@
   <div id="vue-props">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -16,7 +17,8 @@
             <div class="code">
               &lt;template&gt;
               <br /><span class="comment">&nbsp;&nbsp;&lt;!-- 在 HTML 中，變數需使用 kebab-case 命名規則 --&gt;</span>
-              <br />&nbsp;&nbsp;&lt;ChildComponent @user-name="userName" @data="data" @likes="likes" @publish="publish"&gt;&lt;/ChildComponent&gt;
+              <br />&nbsp;&nbsp;&lt;ChildComponent @user-name="userName" @data="data" @likes="likes"
+               @publish="publish"&gt;&lt;/ChildComponent&gt;
               <br />&lt;/template&gt;
               <br />
               <br />&lt;script&gt;
@@ -71,10 +73,13 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({
     article: Cons.article.vueProps,
-    userName: '{{userName}}'
+    userName: '{{userName}}',
   }),
   methods: {
     copy(event) {
@@ -86,8 +91,8 @@ export default {
         }
         ele = ele.parentElement;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

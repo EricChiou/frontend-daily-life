@@ -2,6 +2,7 @@
   <div id="frontend-trend-container">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -24,7 +25,9 @@
         <div class="header">淺談三大框架</div>
         <hr />
         <div class="text">
-          目前 React 仍延續其統治地位，Angular2 繼續保持著一群堅定的擁護者，Vue 則是後勢看漲，甚至在 Github 的星星數力壓 React，而這三大框架都是基於組件的，網頁組件化已經是前端的主流趨勢。而在效能部分，基本上三個框架的效能都已經夠好到讓你足以面對各種狀況，因此不會花太多時間在效能的討論上。下圖分別為在 npm 及 Github 上的統計數據：
+          目前 React 仍延續其統治地位，Angular2 繼續保持著一群堅定的擁護者，Vue 則是後勢看漲，甚至在 Github 的星星數力壓 React，
+          而這三大框架都是基於組件的，網頁組件化已經是前端的主流趨勢。而在效能部分，基本上三個框架的效能都已經夠好到讓你足以面對各種狀況，
+          因此不會花太多時間在效能的討論上。下圖分別為在 npm 及 Github 上的統計數據：
           <br />
           <br />
           <div class="text-center">
@@ -47,7 +50,10 @@
           <br />特性：
           <ul>
             <li>MVC 架構：React 屬於 MVC（Model-View-Controller）架構，基本上只負責「View」層，代表它與業務邏輯是完全解耦的。</li>
-            <li>Jsx：React 是基於 JavaScript 的，任何事都必須在 JavaScript 裡完成，因此提供一種 Jsx 的語法來幫助你處理 html，但這也同時提升了學習難度，當然你也可以選擇不使用它。</li>
+            <li>
+              Jsx：React 是基於 JavaScript 的，任何事都必須在 JavaScript 裡完成，因此提供一種 Jsx 的語法來幫助你處理 html，
+              但這也同時提升了學習難度，當然你也可以選擇不使用它。
+            </li>
             <li>虛擬 DOM：擁有虛擬 DOM，因此在畫面的渲染上效能很高。</li>
             <li>並非大而全的框架：嚴格來說 React 並不是一個框架，而是函式庫，這同時是優點也是缺點，你可以彈性的挑選任何你想使用的工具，但同時也要花更多時間來確認工具的可靠性。</li>
             <li>單向數據綁定：React 的數據是單向綁定的，這讓程式更利於理解與維護，但同時在實現某些功能時會更為麻煩。</li>
@@ -69,13 +75,18 @@
         <span class="sub-header">Angular2：</span>
         <hr />
         <div class="text">
-          一般提到 Angular 指的就是 Angular2，Angular1 則為 AngularJs，Angular 目前已經出到第 7 版，也會直接稱為 Angular 7，Angular 是一個大而全的框架，與 React 不同，它嚴格規定了程式該怎麼寫，且提供了幾乎所有可能使用到的工具。
+          一般提到 Angular 指的就是 Angular2，Angular1 則為 AngularJs，Angular 目前已經出到第 7 版，也會直接稱為 Angular 7，
+          Angular 是一個大而全的框架，與 React 不同，它嚴格規定了程式該怎麼寫，且提供了幾乎所有可能使用到的工具。
           <br />
-          <br />Angular 使用 TypeScript 來撰寫，這意味著你必須學習一個新的語言才能使用它。TypeScript 係由微軟開發，是 JavaScript 的超集合語言，這代表你可以直接在 TypeScript 中寫任何 JavaScript，TypeScript 同時具備了強型別、Interface 等優點。
+          <br />Angular 使用 TypeScript 來撰寫，這意味著你必須學習一個新的語言才能使用它。TypeScript 係由微軟開發，
+          是 JavaScript 的超集合語言，這代表你可以直接在 TypeScript 中寫任何 JavaScript，TypeScript 同時具備了強型別、Interface 等優點。
           <br />
           <br />特性：
           <ul>
-            <li>MVW 架構：在 MVC、MVP、MVVM、... 吵了這麼久之後，Angular 提出了 MVW（Model-View-Whatever），不再執著於由誰來控制 View 與 Model 之間的溝通，轉而花更多心力在程式的關注點分離。</li>
+            <li>
+              MVW 架構：在 MVC、MVP、MVVM、... 吵了這麼久之後，Angular 提出了 MVW（Model-View-Whatever），
+              不再執著於由誰來控制 View 與 Model 之間的溝通，轉而花更多心力在程式的關注點分離。
+            </li>
             <li>大而全的框架：Angular 是一個完整的框架，提供了幾乎所有可能使用到的工具，同時失去了靈活度。</li>
             <li>雙向數據綁定：數據是雙向綁定的，這讓程式複雜度增加，但在資料面上較不容易出錯，有利於某些功能的實現。</li>
             <li>依賴注入：這是 Angular 的一大特點，這使得模組化的組件更容易被引入。</li>
@@ -101,9 +112,11 @@
         <div class="text">
           Vue 誕生於 2013 年，由獨立開源開發者
           <span class="name">尤雨溪</span>
-          所開發，它同時參考了 React 和 Angular，因此兼具兩者的優點，目前 Vue 已經出到 2.x 版，在程式上寫法更偏向是 Angular。Vue 目前受到眾多開發者的歡迎，在 Github 上的星星數甚至已經超越 React。
+          所開發，它同時參考了 React 和 Angular，因此兼具兩者的優點，目前 Vue 已經出到 2.x 版，在程式上寫法更偏向是 Angular。
+          Vue 目前受到眾多開發者的歡迎，在 Github 上的星星數甚至已經超越 React。
           <br />
-          <br />Vue 同樣只是一個函式庫，並不強制你程式的寫法，在彈性上保有如 React 的靈活度，在數據流上更是單/雙向數據流都支持，端看你想使用哪一種，一般要使用單向數據流的話會建議使用 Vuex，Vuex 是基於 Flux 單向資料流的設計模式，也就是 Vue + Flux = Vuex。
+          <br />Vue 同樣只是一個函式庫，並不強制你程式的寫法，在彈性上保有如 React 的靈活度，在數據流上更是單/雙向數據流都支持，
+          端看你想使用哪一種，一般要使用單向數據流的話會建議使用 Vuex，Vuex 是基於 Flux 單向資料流的設計模式，也就是 Vue + Flux = Vuex。
           <br />
           <br />特性：
           <ul>
@@ -232,8 +245,11 @@
 <script>
 import Cons from '../../../constants/constants';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
-  data: () => ({ article: Cons.article.frontendTrend })
+  components: { BackToList },
+  data: () => ({ article: Cons.article.frontendTrend }),
 };
 </script>
 

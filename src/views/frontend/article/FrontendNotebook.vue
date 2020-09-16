@@ -2,6 +2,7 @@
   <div id="frontend-notebook-container">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -16,7 +17,8 @@
               <br />
               <br />&lt;head&gt;
               <br />&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
-              <br />&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"&gt;
+              <br />&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,
+              maximum-scale=1, user-scalable=no, viewport-fit=cover"&gt;
               <br />&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
               <br />&lt;/head&gt;
               <br />
@@ -139,10 +141,13 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({
     article: Cons.article.frontendNotebook,
-    link: Cons.article.htmlSetting.link
+    link: Cons.article.htmlSetting.link,
   }),
   methods: {
     copy(event) {
@@ -154,8 +159,8 @@ export default {
         }
         ele = ele.parentElement;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

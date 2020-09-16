@@ -17,8 +17,8 @@ import MenuFooter from './components/menu/menu-components/MenuFooter.vue';
 export default {
   components: {
     Menu,
-    MenuFooter
-  }
+    MenuFooter,
+  },
 };
 </script>
 
@@ -220,8 +220,7 @@ a {
   }
 }
 #app {
-  font-family: 'Noto Sans TC', Helvetica, Arial, Sans-Serif,
-    'Microsoft JhengHei';
+  font-family: 'Noto Sans TC', Helvetica, Arial, Sans-Serif, 'Microsoft JhengHei';
   .main {
     position: fixed;
     top: 0;

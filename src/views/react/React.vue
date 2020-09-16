@@ -19,7 +19,7 @@ import Cons from '../../constants/constants';
 
 export default {
   data: () => ({
-    article: []
+    article: [],
   }),
   created() {
     Object.keys(Cons.article).forEach(key => {
@@ -27,6 +27,9 @@ export default {
         this.article.push(Cons.article[key]);
       }
     });
-  }
+  },
+  mounted() {
+    this.$store.commit('changeBackPageRoute', '/react');
+  },
 };
 </script>

@@ -2,6 +2,7 @@
   <div id="ng-notebook-container">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -187,7 +188,10 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({ article: Cons.article.ngNotebook }),
   methods: {
     copy(event) {
@@ -199,7 +203,7 @@ export default {
         }
         ele = ele.parentElement;
       }
-    }
-  }
+    },
+  },
 };
 </script>

@@ -2,6 +2,7 @@
   <div id="seo">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -9,9 +10,13 @@
         <div class="sub-header">如何做好 SEO</div>
         <hr />
         <div class="text">
-          &emsp;&emsp;首先第一點，SPA（Single Page Application）架構的網站對於 SEO 非常不友善，原因在於 SPA 架構的 HTML 只會有一個 index.html，剩下的事情全部由 JS 處理，導致不管搜尋引擎如何進行爬蟲，總是只能爬到同一份 index.html 及同一份 tag 設定。因此如果需要有良好的 SEO 的話，就需要做 SSR（Server Side Render）來確保每個頁面都能有自己想要的 SEO 設定。
+          &emsp;&emsp;首先第一點，SPA（Single Page Application）架構的網站對於 SEO 非常不友善，
+          原因在於 SPA 架構的 HTML 只會有一個 index.html，剩下的事情全部由 JS 處理，導致不管搜尋引擎如何進行爬蟲，
+          總是只能爬到同一份 index.html 及同一份 tag 設定。因此如果需要有良好的 SEO 的話，就需要做 SSR（Server Side Render）來確保每個頁面都能有自己想要的 SEO 設定。
           <br />
-          <br />&emsp;&emsp;第二點，雖然設定 tag 很重要，但是最重要的依然是把網站內容做好，現在的搜尋引擎越來越聰明，要想在 tag 設定騙過它越來越困難，因此把內容做好雖然聽起來像廢話，但卻是最有效的方法。例如每個頁面都要有能回到首頁的連結，這時搜尋引擎就能很清楚的知道哪一個是首頁，進而顯示在搜尋結果中。
+          <br />&emsp;&emsp;第二點，雖然設定 tag 很重要，但是最重要的依然是把網站內容做好，現在的搜尋引擎越來越聰明，
+          要想在 tag 設定騙過它越來越困難，因此把內容做好雖然聽起來像廢話，但卻是最有效的方法。例如每個頁面都要有能回到首頁的連結，
+          這時搜尋引擎就能很清楚的知道哪一個是首頁，進而顯示在搜尋結果中。
         </div>
         <br />
         <div class="sub-header">各種 Tag 設定</div>
@@ -64,10 +69,7 @@
             <li>小型縮圖建議最小尺寸 600 x 600（比例 1 : 1）</li>
           </ul>
           <br />詳細說明可以在 FB 的官方文件找到：
-          <a
-            href="https://developers.facebook.com/docs/sharing/best-practices"
-            target="_blank"
-          >連結在此</a>
+          <a href="https://developers.facebook.com/docs/sharing/best-practices" target="_blank">連結在此</a>
           <br />
           <br />
           <div class="code-area">
@@ -108,9 +110,12 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({
-    article: Cons.article.seo
+    article: Cons.article.seo,
   }),
   methods: {
     copy(event) {
@@ -122,8 +127,8 @@ export default {
         }
         ele = ele.parentElement;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

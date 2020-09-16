@@ -33,7 +33,7 @@ import Cons from '../constants/constants';
 
 export default {
   data: () => ({
-    article: []
+    article: [],
   }),
   methods: {
     search(e) {
@@ -70,12 +70,8 @@ export default {
     },
     setUrl(keyword) {
       const search = keyword ? `?keyword=${keyword}` : '';
-      window.history.replaceState(
-        null,
-        null,
-        `${window.location.href.split('?')[0]}${search}`
-      );
-    }
+      window.history.replaceState(null, null, `${window.location.href.split('?')[0]}${search}`);
+    },
   },
   mounted() {
     const search = window.location.href.split('?')[1];
@@ -94,7 +90,9 @@ export default {
     } else {
       this.filterArticle();
     }
-  }
+
+    this.$store.commit('changeBackPageRoute', '/home');
+  },
 };
 </script>
 

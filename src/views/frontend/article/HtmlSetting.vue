@@ -2,6 +2,7 @@
   <div id="html-head-container">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -89,9 +90,10 @@
           <div class="sub-header">&lt;meta charset="utf-8"&gt;</div>告訴瀏覽器這個 html 中的內文字串要用何種格式讀取。
           <br />
           <br />
-          <div
-            class="sub-header"
-          >&lt;meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"&gt;</div>設定在移動裝置上，畫面的寬度及初始縮放倍率等。
+          <div class="sub-header">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,
+            user-scalable=no, viewport-fit=cover"&gt;
+          </div>設定在移動裝置上，畫面的寬度及初始縮放倍率等。
           <br />width=device-width，設定畫面寬度等於螢幕寬度；
           <br />initial-scale=1，將畫面初始縮放倍率設為 1 倍；
           <br />minimum-scale=1，設定畫面縮放的最小倍率為 1 倍；
@@ -100,9 +102,8 @@
           <br />viewport-fit=cover，在手機螢幕有瀏海時，能正確的顯示全螢幕，例如 iPhone X。
           <br />
           <br />
-          <div
-            class="sub-header"
-          >&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</div>設定各個瀏覽器預設使用的版本。
+          <div class="sub-header">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</div>
+          設定各個瀏覽器預設使用的版本。
           <br />IE=edge，設定 IE 使用 Edge 版本開啟網頁；
           <br />chrome=1，IE 有個模擬 Chrome 的兼容模式，這個設定就是開啟這個功能。
         </div>
@@ -114,8 +115,11 @@
 <script>
 import Cons from '../../../constants/constants';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
-  data: () => ({ article: Cons.article.htmlSetting })
+  components: { BackToList },
+  data: () => ({ article: Cons.article.htmlSetting }),
 };
 </script>
 

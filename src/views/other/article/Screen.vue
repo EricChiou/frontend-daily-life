@@ -2,6 +2,7 @@
   <div id="rsa">
     <div class="article">
       <div class="title">{{article.title}}</div>
+      <BackToList></BackToList>
       <div class="date">{{article.date}}</div>
       <div class="summary">{{article.summary}}</div>
       <div class="under-line"></div>
@@ -59,9 +60,12 @@
           <div class="code-area">
             <div class="code">
               There are screens on:
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30788.pts-0.eric&nbsp;&nbsp;&nbsp;(08/17/2020 05:12:01 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22930.pts-0.eric&nbsp;&nbsp;&nbsp;(08/07/2020 05:51:47 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3695.pts-0.eric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(08/04/2020 09:50:32 AM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30788.pts-0.eric&nbsp;&nbsp;&nbsp;
+              (08/17/2020 05:12:01 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22930.pts-0.eric&nbsp;&nbsp;&nbsp;
+              (08/07/2020 05:51:47 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3695.pts-0.eric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              (08/04/2020 09:50:32 AM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
               <br />3 Sockets in /run/screen/S-eric.
             </div>
           </div>
@@ -88,8 +92,10 @@
         <div class="code-area">
           <div class="code">
             There are screens on:
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22930.pts-0.eric&nbsp;&nbsp;&nbsp;(08/07/2020 05:51:47 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3695.pts-0.eric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(08/04/2020 09:50:32 AM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22930.pts-0.eric&nbsp;&nbsp;&nbsp;
+            (08/07/2020 05:51:47 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3695.pts-0.eric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            (08/04/2020 09:50:32 AM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
             <br />2 Sockets in /run/screen/S-eric.
           </div>
         </div>
@@ -102,7 +108,10 @@
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
+import BackToList from '../../../components/backtolist/BackToList.vue';
+
 export default {
+  components: { BackToList },
   data: () => ({
     article: Cons.article.screen,
   }),
