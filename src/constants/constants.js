@@ -3,12 +3,21 @@ const articleCategory = {
   angular: 'angular',
   react: 'react',
   vue: 'vue',
-  other: 'other',
+  other: 'other', // backend
 };
 
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    object: {
+      category: articleCategory.other,
+      title: '何謂 PO、BO、DTO、VO',
+      date: '2020 / 09 / 08',
+      summary:
+        '後端在開發的時候常常會聽到 PO、BO、DTO、VO 這些物件類型，一次搞清楚他們之間的區別是什麼',
+      link: '/other/object',
+      name: 'object'
+    },
     screen: {
       category: articleCategory.other,
       title: '使用 Screen 在背景執行終端機',

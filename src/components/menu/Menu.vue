@@ -9,7 +9,7 @@
         </div>
       </div>
     </router-link>
-    <div class="description">記錄我在前端遇到的大小事、心得及其他相關技術，並推薦一些好用網站。</div>
+    <div class="description">記錄我在前端遇到的大小事、心得及其他相關技術，目前邁向全端之路。</div>
     <MenuList></MenuList>
     <div class="mobile">
       <MenuFooter></MenuFooter>

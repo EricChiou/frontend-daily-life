@@ -37,6 +37,7 @@ const VueProps = () => import(/* webpackChunkName: "vue" */ './views/vue/article
 const Jenkins = () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
 const RSA = () => import(/* webpackChunkName: "other" */ './views/other/article/RSA.vue');
 const Screen = () => import(/* webpackChunkName: "other" */ './views/other/article/Screen.vue');
+const Object = () => import(/* webpackChunkName: "other" */ './views/other/article/Object.vue');
 
 Vue.use(Router);
 
@@ -183,6 +184,11 @@ export default new Router({
       path: Cons.article.screen.link,
       name: Cons.article.screen.name,
       component: Screen
+    },
+    {
+      path: Cons.article.object.link,
+      name: Cons.article.object.name,
+      component: Object
     }
   ]
 });

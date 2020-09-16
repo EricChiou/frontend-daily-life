@@ -14,7 +14,7 @@
         <li>Vue</li>
       </router-link>
       <router-link :to="{name:'other'}">
-        <li>相關技術</li>
+        <li>後端</li>
       </router-link>
       <router-link :to="{name:'recommend'}">
         <li>推薦網站</li>

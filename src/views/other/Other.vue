@@ -1,7 +1,7 @@
 <template>
   <div id="frontend-container">
     <div class="article-list-container">
-      <div class="title">相關技術</div>
+      <div class="title">後端</div>
       <div class="sub-title">文章列表</div>
       <router-link v-for="content in article" :key="content.link" :to="content.link">
         <div class="article-list">
