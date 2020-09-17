@@ -24,8 +24,8 @@
               <br />'max-len': ['error', { 'code': 120 }],
               <br />
               <br />
-              <span class="comment">// 箭頭函式規則，使用 'as-needed' 規則</span>
-              <br />'arrow-parens': ['error', 'as-needed'],
+              <span class="comment">// 箭頭函式規則，使用 'always' 規則</span>
+              <br />'arrow-parens': ['error', 'always'],
               <br />
               <br />
               <span class="comment">// 禁止對函式參數再賦予值，但是對 object 內的資料可以再賦予值</span>
