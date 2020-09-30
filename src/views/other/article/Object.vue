@@ -41,7 +41,7 @@
         <hr />最後用一張簡單的圖來表達 PO、BO、DTO、VO 之間的關係：
         <br />
         <br />
-        <img src="../../../assets/images/backend_object.png" />
+        <img src="../../../assets/images/backend_object_relationship.png" />
       </div>
     </div>
   </div>
