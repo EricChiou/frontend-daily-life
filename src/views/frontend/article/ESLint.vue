@@ -20,8 +20,12 @@
               <br />'comma-dangle': ['error', 'always-multiline'],
               <br />
               <br />
-              <span class="comment">// code 單行最大長度建議為 120 個字</span>
-              <br />'max-len': ['error', { 'code': 120 }],
+              <span class="comment">// code 單行最大長度建議為 100 個字</span>
+              <br />'max-len': ['error', { 'code': 100 }],
+              <br />
+              <br />
+              <span class="comment">// 單檔最大行數限制為 500 行，建議範圍為 100 ~ 500</span>
+              <br />'max-lines': ['error', 500],
               <br />
               <br />
               <span class="comment">// 箭頭函式規則，使用 'always' 規則</span>
@@ -50,6 +54,18 @@
               <br />
               <span class="comment">// Function 後的括號不要有空格</span>
               <br />'space-before-function-paren': ['error', 'never']
+              <br />
+              <br />
+              <span class="comment">// 不要有 tab, 用空格取代 tab</span>
+              <br />'no-tabs': ['error']
+              <br />
+              <br />
+              <span class="comment">// 行末不要出現空格</span>
+              <br />'no-trailing-spaces': 'error'
+              <br />
+              <br />
+              <span class="comment">// 巢狀 code 不要超過 4 層</span>
+              <br />'max-depth': ['error', 4]
             </div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg" />
