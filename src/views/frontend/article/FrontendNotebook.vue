@@ -52,7 +52,7 @@
               <br />&nbsp;&nbsp;padding: 0;
               <br />&nbsp;&nbsp;width: 100vw;
               <br />&nbsp;&nbsp;height: 100vh;
-              <br />&nbsp;&nbsp;font-family: Helvetica, Arial, 'Noto Sans TC', 'Microsoft JhengHei', Sans-Serif;
+              <br />&nbsp;&nbsp;font-family: 'Noto Sans TC', Helvetica, Arial, 'Microsoft JhengHei', Sans-Serif;
               <br />&nbsp;&nbsp;overflow: auto;
               <br />}
             </div>
