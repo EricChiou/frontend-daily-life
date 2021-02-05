@@ -36,9 +36,9 @@
           <br>在 Vue Router 中的使用方法不變，直接使用即可：
           <div class="code-area">
             const router = new VueRouter({
-            <br>&nbsp;&nbsp;routes: [
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;{ path: '/component', component: Component }
-            <br>&nbsp;&nbsp;]
+            <br><Tab />routes: [
+            <br><Tab /><Tab />{ path: '/component', component: Component }
+            <br><Tab />]
             <br>});
           </div>
         </div>
@@ -49,7 +49,8 @@
           使用 Webpack 特殊註解語法進行組件模組分塊（需要 Webpack 版本 > 2.4）：
           <div class="code-area">
             const Component = () => import(/* webpackChunkName: "group-1" */ './Component.vue');
-            <br>const Component2 = () => import(/* webpackChunkName: "group-1" */ './Component2.vue');
+            <br>
+            const Component2 = () => import(/* webpackChunkName: "group-1" */ './Component2.vue');
           </div>
         </div>
       </div>
@@ -60,11 +61,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({ article: Cons.article.vueLazyLoading }),
   methods: {
     copy(event) {

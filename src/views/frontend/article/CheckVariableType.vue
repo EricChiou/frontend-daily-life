@@ -1,10 +1,10 @@
 <template>
   <div id="article-name">
     <div class="article">
-      <div class="title">{{article.title}}</div>
+      <div class="title">{{ article.title }}</div>
       <BackToList></BackToList>
-      <div class="date">{{article.date}}</div>
-      <div class="summary">{{article.summary}}</div>
+      <div class="date">{{ article.date }}</div>
+      <div class="summary">{{ article.summary }}</div>
       <div class="under-line"></div>
       <div class="content">
         <div class="sub-header">typeof</div>
@@ -14,7 +14,8 @@
           <div class="code-area">
             <div class="code">
               <span class="comment">// 8 種原生型別</span>
-              <br />'undefined', 'boolean', 'number', 'bigint', 'string', 'object', 'symbol', 'function'
+              <br />
+              'undefined', 'boolean', 'number', 'bigint', 'string', 'object', 'symbol', 'function'
             </div>
           </div>
           <br />使用方式及回傳結果：
@@ -25,16 +26,11 @@
               <br />
               <br />
               <span class="comment">// 回傳 'boolean'</span>
-              <br />typeof true;
-              <br />typeof !0;
-              <br />typeof !null;
-              <br />typeof !undefined;
+              <br />typeof true; <br />typeof !0; <br />typeof !null; <br />typeof !undefined;
               <br />
               <br />
               <span class="comment">// 回傳 'number'</span>
-              <br />typeof 0;
-              <br />typeof Number('123456');
-              <br />typeof NaN;
+              <br />typeof 0; <br />typeof Number('123456'); <br />typeof NaN;
               <br />
               <br />
               <span class="comment">// 回傳 'bigint'</span>
@@ -42,16 +38,14 @@
               <br />
               <br />
               <span class="comment">// 回傳 'string'</span>
-              <br />typeof '';
-              <br />typeof 'abc';
+              <br />typeof ''; <br />typeof 'abc';
               <br />
               <br />
               <span class="comment">// 回傳 'object'</span>
               <br />typeof [];
               <br />
               typeof {};
-              <br />typeof new Uint16Array();
-              <br />typeof null;
+              <br />typeof new Uint16Array(); <br />typeof null;
               <br />
               <br />
               <span class="comment">// 回傳 'symbol'</span>
@@ -116,26 +110,30 @@
           <div class="sub-header">結論</div>
           <hr />
           <div class="text">
-            在使用 typeof 要多注意 object 型別，許多直覺上應該判斷結果不是 object 的變數實際上都是 object，例如陣列、null，
-            <br />因此建議使用 instanceof 來做判斷，當然如果是陣列的話也可以使用 Array.isArray() 來判斷。
+            在使用 typeof 要多注意 object 型別，許多直覺上應該判斷結果不是 object 的變數實際上都是
+            object，例如陣列、null，
+            <br />因此建議使用 instanceof 來做判斷，當然如果是陣列的話也可以使用 Array.isArray()
+            來判斷。
           </div>
         </div>
-        <br />參考資料：
-        <br />&nbsp;&nbsp;
+        <br />參考資料： <br /><Tab />
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
           target="_blank"
-        >https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures</a>
-        <br />&nbsp;&nbsp;
+        >
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+        </a>
+        <br /><Tab />
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
           target="_blank"
-        >https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof</a>
-        <br />&nbsp;&nbsp;
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof"
-          target="_blank"
-        >https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof</a>
+        >
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+        </a>
+        <br /><Tab />
+        <a :href="mozillaLink" target="_blank">
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+        </a>
       </div>
     </div>
   </div>
@@ -144,13 +142,16 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
     article: Cons.article.checkVariableType,
+    mozillaLink: `https://developer.mozilla.org/en-US/docs/Web
+    /JavaScript/Reference/Operators/instanceof`,
   }),
   methods: {
     copy(event) {

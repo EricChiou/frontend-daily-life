@@ -16,11 +16,11 @@ module.exports = {
     // 開啟多行末尾逗號規則
     'comma-dangle': ['error', 'always-multiline'],
 
-    // code 單行最大長度建議為 100 個字
-    'max-len': ['error', { 'code': 100 }],
+    // code 單行最大長度建議為 120 個字
+    'max-len': ['off', { 'code': 120 }],
 
-    // 箭頭函式規則，使用 'as-needed' 規則
-    'arrow-parens': ['error', 'as-needed'],
+    // 箭頭函式規則，使用 'always' 規則
+    'arrow-parens': ['error', 'always'],
 
     // 禁止對函式參數再賦予值，但是對 object 內的資料可以再賦予值
     'no-param-reassign': ['error', { 'props': false }],

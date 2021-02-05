@@ -1,17 +1,17 @@
 <template>
   <div id="menu-footer-container">
     <ul>
-      <router-link :to="{name:'about'}">
+      <router-link :to="{ name: 'about' }">
         <li>關於我</li>
       </router-link>
-      <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span class="vertical-line"><Tab />|<Tab /></span>
       <li>
         <a href="http://www.calicomoomoo.ml/entrance/" target="_blank">入口網站</a>
       </li>
-      <span class="vertical-line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span class="vertical-line"><Tab />|<Tab /></span>
       <li>
         <a href="https://github.com/EricChiou/frontend-daily-life" target="_blank">
-          <img src="../../../assets/images/github.png" width="20" height="20">Github
+          <img src="../../../assets/images/github.png" width="20" height="20" />Github
         </a>
       </li>
     </ul>
@@ -20,7 +20,11 @@
 </template>
 
 <script>
-export default {};
+import Tab from '../../tab/Tab.vue';
+
+export default {
+  components: { Tab },
+};
 </script>
 
 <style scoped lang="scss">

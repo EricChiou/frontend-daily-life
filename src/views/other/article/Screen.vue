@@ -60,12 +60,12 @@
           <div class="code-area">
             <div class="code">
               There are screens on:
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30788.pts-0.eric&nbsp;&nbsp;&nbsp;
-              (08/17/2020 05:12:01 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22930.pts-0.eric&nbsp;&nbsp;&nbsp;
-              (08/07/2020 05:51:47 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3695.pts-0.eric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              (08/04/2020 09:50:32 AM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+              <br /><Tab /><Tab /><Tab /><Tab />30788.pts-0.eric<Tab />&nbsp;
+              (08/17/2020 05:12:01 PM)<Tab /><Tab /><Tab /><Tab />(Detached)
+              <br /><Tab /><Tab /><Tab /><Tab />22930.pts-0.eric<Tab />&nbsp;
+              (08/07/2020 05:51:47 PM)<Tab /><Tab /><Tab /><Tab />(Detached)
+              <br /><Tab /><Tab /><Tab /><Tab />3695.pts-0.eric<Tab /><Tab />&nbsp;
+              (08/04/2020 09:50:32 AM)<Tab /><Tab /><Tab /><Tab />(Detached)
               <br />3 Sockets in /run/screen/S-eric.
             </div>
           </div>
@@ -92,10 +92,10 @@
         <div class="code-area">
           <div class="code">
             There are screens on:
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22930.pts-0.eric&nbsp;&nbsp;&nbsp;
-            (08/07/2020 05:51:47 PM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3695.pts-0.eric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            (08/04/2020 09:50:32 AM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Detached)
+            <br /><Tab /><Tab /><Tab /><Tab />22930.pts-0.eric<Tab />&nbsp;
+            (08/07/2020 05:51:47 PM)<Tab /><Tab /><Tab /><Tab />(Detached)
+            <br /><Tab /><Tab /><Tab /><Tab />3695.pts-0.eric<Tab /><Tab />&nbsp;
+            (08/04/2020 09:50:32 AM)<Tab /><Tab /><Tab /><Tab />(Detached)
             <br />2 Sockets in /run/screen/S-eric.
           </div>
         </div>
@@ -107,11 +107,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
     article: Cons.article.screen,
   }),

@@ -16,22 +16,22 @@
           <div class="code-area">
             <div class="code">
               &lt;template&gt;
-              <br /><span class="comment">&nbsp;&nbsp;&lt;!-- 在 HTML 中，變數需使用 kebab-case 命名規則 --&gt;</span>
-              <br />&nbsp;&nbsp;&lt;ChildComponent @user-name="userName" @data="data" @likes="likes"
+              <br /><span class="comment"><Tab />&lt;!-- 在 HTML 中，變數需使用 kebab-case 命名規則 --&gt;</span>
+              <br /><Tab />&lt;ChildComponent @user-name="userName" @data="data" @likes="likes"
                @publish="publish"&gt;&lt;/ChildComponent&gt;
               <br />&lt;/template&gt;
               <br />
               <br />&lt;script&gt;
-              <br />&nbsp;&nbsp;export default {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;data: () =&gt; ({
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userName: 'myName',
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'value'
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;likes: 10,
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;publish: true
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;})
-              <br />&nbsp;&nbsp;}
+              <br /><Tab />export default {
+              <br /><Tab /><Tab />data: () =&gt; ({
+              <br /><Tab /><Tab /><Tab />userName: 'myName',
+              <br /><Tab /><Tab /><Tab />data: {
+              <br /><Tab /><Tab /><Tab /><Tab />key: 'value'
+              <br /><Tab /><Tab /><Tab />},
+              <br /><Tab /><Tab /><Tab />likes: 10,
+              <br /><Tab /><Tab /><Tab />publish: true
+              <br /><Tab /><Tab />})
+              <br /><Tab />}
               <br />&lt;/script&gt;
             </div>
             <div class="copy" @click="copy">
@@ -44,18 +44,18 @@
           <div class="code-area">
             <div class="code">
               &lt;template&gt;
-              <br />&nbsp;&nbsp;&lt;div&gt;{{userName}}&lt;/div&gt;
+              <br /><Tab />&lt;div&gt;{{userName}}&lt;/div&gt;
               <br />&lt;/template&gt;
               <br />
               <br />&lt;script&gt;
-              <br />&nbsp;&nbsp;export default {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;props: {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userName: String,
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: Object,
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;likes: Number,
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;publish: Boolean
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;}
+              <br /><Tab />export default {
+              <br /><Tab /><Tab />props: {
+              <br /><Tab /><Tab /><Tab />userName: String,
+              <br /><Tab /><Tab /><Tab />data: Object,
+              <br /><Tab /><Tab /><Tab />likes: Number,
+              <br /><Tab /><Tab /><Tab />publish: Boolean
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
               <br />&lt;/script&gt;
             </div>
             <div class="copy" @click="copy">
@@ -72,11 +72,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
     article: Cons.article.vueProps,
     userName: '{{userName}}',

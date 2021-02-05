@@ -18,11 +18,11 @@
             <br>import Child from './Child'
             <br>
             <br>class App extends Component {
-            <br>&nbsp;&nbsp;render() {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;return (
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Child name="dataName"/&gt;
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br>&nbsp;&nbsp;}
+            <br><Tab />render() {
+            <br><Tab /><Tab />return (
+            <br><Tab /><Tab /><Tab />&lt;Child name="dataName"/&gt;
+            <br><Tab /><Tab />);
+            <br><Tab />}
             <br>}
             <br>
             <br>export default App;
@@ -32,16 +32,16 @@
             import React, { Component } from 'react';
             <br>
             <br>class Child extends Component {
-            <br>&nbsp;&nbsp;constructor(props) {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;super(props);
-            <br>&nbsp;&nbsp;}
+            <br><Tab />constructor(props) {
+            <br><Tab /><Tab />super(props);
+            <br><Tab />}
             <br>
-            <br>&nbsp;&nbsp;render() {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;return (
+            <br><Tab />render() {
+            <br><Tab /><Tab />return (
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;{this.props.name}&lt;/div&gt;
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br>&nbsp;&nbsp;}
+            <Tab /><Tab /><Tab />&lt;div&gt;{this.props.name}&lt;/div&gt;
+            <br><Tab /><Tab />);
+            <br><Tab />}
             <br>}
             <br>
             <br>export default Child;
@@ -58,29 +58,29 @@
             import React, { Component } from 'react';
             <br>
             <br>class App extends Component {
-            <br>&nbsp;&nbsp;constructor() {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;super();
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;this.state = {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number: 'one'
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;};
-            <br>&nbsp;&nbsp;}
+            <br><Tab />constructor() {
+            <br><Tab /><Tab />super();
+            <br><Tab /><Tab />this.state = {
+            <br><Tab /><Tab /><Tab />number: 'one'
+            <br><Tab /><Tab />};
+            <br><Tab />}
             <br>
-            <br>&nbsp;&nbsp;clickMe(n) {
+            <br><Tab />clickMe(n) {
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;this.setState({number: n});
-            <br>&nbsp;&nbsp;}
+            <Tab /><Tab />this.setState({number: n});
+            <br><Tab />}
             <br>
-            <br>&nbsp;&nbsp;render() {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;return (
+            <br><Tab />render() {
+            <br><Tab /><Tab />return (
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;{this.state.number}&lt;/h1&gt;
+            <Tab /><Tab /><Tab />&lt;h1&gt;{this.state.number}&lt;/h1&gt;
             <br>
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={()=>{ clickMe('one'); }}&gt;one&lt;/button&gt;
+            <Tab /><Tab /><Tab />&lt;button onClick={()=>{ clickMe('one'); }}&gt;one&lt;/button&gt;
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={()=>{ clickMe('two'); }}&gt;two&lt;/button&gt;
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br>&nbsp;&nbsp;}
+            <Tab /><Tab /><Tab />&lt;button onClick={()=>{ clickMe('two'); }}&gt;two&lt;/button&gt;
+            <br><Tab /><Tab />);
+            <br><Tab />}
             <br>}
             <br>
             <br>export default App;
@@ -94,11 +94,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({ article: Cons.article.reactPropsAndState }),
   methods: {
     copy(event) {

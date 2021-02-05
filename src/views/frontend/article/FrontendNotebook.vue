@@ -16,10 +16,9 @@
               <br />&lt;html lang="zh"&gt;
               <br />
               <br />&lt;head&gt;
-              <br />&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
-              <br />&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,
-              maximum-scale=1, user-scalable=no, viewport-fit=cover"&gt;
-              <br />&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+              <br /><Tab />&lt;meta charset="utf-8"&gt;
+              <br /><Tab />&lt;meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"&gt;
+              <br /><Tab />&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
               <br />&lt;/head&gt;
               <br />
               <br />&lt;body&gt;
@@ -47,13 +46,13 @@
               <br />
               <br />html,
               <br />body {
-              <br />&nbsp;&nbsp;position: relative;
-              <br />&nbsp;&nbsp;margin: 0;
-              <br />&nbsp;&nbsp;padding: 0;
-              <br />&nbsp;&nbsp;width: 100vw;
-              <br />&nbsp;&nbsp;height: 100vh;
-              <br />&nbsp;&nbsp;font-family: 'Noto Sans TC', Helvetica, Arial, 'Microsoft JhengHei', Sans-Serif;
-              <br />&nbsp;&nbsp;overflow: auto;
+              <br /><Tab />position: relative;
+              <br /><Tab />margin: 0;
+              <br /><Tab />padding: 0;
+              <br /><Tab />width: 100vw;
+              <br /><Tab />height: 100vh;
+              <br /><Tab />font-family: 'Noto Sans TC', Helvetica, Arial, 'Microsoft JhengHei', Sans-Serif;
+              <br /><Tab />overflow: auto;
               <br />}
             </div>
             <div class="copy" @click="copy">
@@ -68,29 +67,29 @@
           <div class="code-area">
             <div class="code">
               @mixin breakpoint($width) {
-              <br />&nbsp;&nbsp;@if $width==xl {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 1200px) {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;}
+              <br /><Tab />@if $width==xl {
+              <br /><Tab /><Tab />@media only screen and (max-width: 1200px) {
+              <br /><Tab /><Tab /><Tab />@content;
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
               <br />
-              <br />&nbsp;&nbsp;@else if $width==l {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 1023px) {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;}
+              <br /><Tab />@else if $width==l {
+              <br /><Tab /><Tab />@media only screen and (max-width: 1023px) {
+              <br /><Tab /><Tab /><Tab />@content;
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
               <br />
-              <br />&nbsp;&nbsp;@else if $width==m {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 767px) {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;}
+              <br /><Tab />@else if $width==m {
+              <br /><Tab /><Tab />@media only screen and (max-width: 767px) {
+              <br /><Tab /><Tab /><Tab />@content;
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
               <br />
-              <br />&nbsp;&nbsp;@else if $width==s {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;@media only screen and (max-width: 479px) {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@content;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;}
+              <br /><Tab />@else if $width==s {
+              <br /><Tab /><Tab />@media only screen and (max-width: 479px) {
+              <br /><Tab /><Tab /><Tab />@content;
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
               <br />}
             </div>
             <div class="copy" @click="copy">
@@ -105,26 +104,26 @@
           <div class="code-area">
             <div class="code">
               $colors: (black: (base:#000000, light:#454545),
-              <br />&nbsp;&nbsp;white:(base:#ffffff, dark:#dddddd));
+              <br /><Tab />white:(base:#ffffff, dark:#dddddd));
               <br />
               <br />@function theme($color, $type: 'base', $map: $colors) {
-              <br />&nbsp;&nbsp;@if (map-has-key($map, $color)) {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;$value: map-get($map, $color);
+              <br /><Tab />@if (map-has-key($map, $color)) {
+              <br /><Tab /><Tab />$value: map-get($map, $color);
               <br />
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;@if type-of($value)==color {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@return $value;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
+              <br /><Tab /><Tab />@if type-of($value)==color {
+              <br /><Tab /><Tab /><Tab />@return $value;
+              <br /><Tab /><Tab />}
               <br />
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;@if (map-has-key($value, $type)) {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$value: map-get($value, $type);
+              <br /><Tab /><Tab />@if (map-has-key($value, $type)) {
+              <br /><Tab /><Tab /><Tab />$value: map-get($value, $type);
               <br />
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@if type-of($value)==color {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@return $value;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;}
-              <br />&nbsp;&nbsp;}
+              <br /><Tab /><Tab /><Tab />@if type-of($value)==color {
+              <br /><Tab /><Tab /><Tab /><Tab />@return $value;
+              <br /><Tab /><Tab /><Tab />}
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
               <br />
-              <br />&nbsp;&nbsp;@return null;
+              <br /><Tab />@return null;
               <br />}
             </div>
             <div class="copy" @click="copy">
@@ -140,11 +139,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
     article: Cons.article.frontendNotebook,
     link: Cons.article.htmlSetting.link,

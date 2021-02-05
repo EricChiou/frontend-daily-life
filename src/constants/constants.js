@@ -9,6 +9,15 @@ const articleCategory = {
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    nginx: {
+      category: articleCategory.other,
+      title: '使用 Nginx 架設 http server',
+      date: '2021 / 02 / 05',
+      summary:
+        '在 Ubuntu 18.04 上安裝 Nginx 建立 http server，並使用轉址、Certbot 自動更新 SSL 憑證等功能',
+      link: '/other/nginx',
+      name: 'nginx',
+    },
     object: {
       category: articleCategory.other,
       title: '何謂 PO、BO、DTO、VO',

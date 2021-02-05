@@ -52,7 +52,8 @@
         <div class="sub-header">執行 go build 時 PATH、GOPATH 和 GROOT 預設路徑錯誤</div>
         <hr />
         <div class="text">
-          使用 Jenkins 執行 go build、go run 等指令時，會發現 PATH、GOPATH 或 GROOT 會被預設為 Jenkins 底下的資料夾，此時會抓不到之前所安裝的 package 及相關指令，
+          使用 Jenkins 執行 go build、go run 等指令時，
+          會發現 PATH、GOPATH 或 GROOT 會被預設為 Jenkins 底下的資料夾，此時會抓不到之前所安裝的 package 及相關指令，
           因此需要另外設定 GOPATH 和 PATH，在執行 go 指令前加入這兩行：
           <div class="code-area">
             <div class="code">

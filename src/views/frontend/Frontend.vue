@@ -5,9 +5,9 @@
       <div class="sub-title">文章列表</div>
       <router-link v-for="content in article" :key="content.link" :to="content.link">
         <div class="article-list">
-          <h4>{{content.title}}</h4>
-          <div class="date">{{content.date}}</div>
-          <div class="summary">{{content.summary}}</div>
+          <h4>{{ content.title }}</h4>
+          <div class="date">{{ content.date }}</div>
+          <div class="summary">{{ content.summary }}</div>
         </div>
       </router-link>
     </div>
@@ -22,7 +22,7 @@ export default {
     article: [],
   }),
   created() {
-    Object.keys(Cons.article).forEach(key => {
+    Object.keys(Cons.article).forEach((key) => {
       if (Cons.article[key].category === 'frontend') {
         this.article.push(Cons.article[key]);
       }

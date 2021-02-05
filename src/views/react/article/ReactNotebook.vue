@@ -14,11 +14,11 @@
             import React, { Component } from 'react';
             <br>
             <br>class Component extends Component {
-            <br>&nbsp;&nbsp;render() {
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;return (
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;/div&gt;
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;);
-            <br>&nbsp;&nbsp;}
+            <br><Tab />render() {
+            <br><Tab /><Tab />return (
+            <br><Tab /><Tab /><Tab />&lt;div&gt;&lt;/div&gt;
+            <br><Tab /><Tab />);
+            <br><Tab />}
             <br>}
             <br>
             <br>export default Component;
@@ -41,11 +41,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({ article: Cons.article.reactNotebook }),
   methods: {
     copy(event) {

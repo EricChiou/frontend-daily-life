@@ -29,11 +29,11 @@
             <br />
             <br />
             @NgModule({
-            <br />&nbsp;&nbsp;imports: [
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;CommonModule,
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;CustomersRoutingModule
-            <br />&nbsp;&nbsp;],
-            <br />&nbsp;&nbsp;declarations: [CustomerListComponent]
+            <br /><Tab />imports: [
+            <br /><Tab /><Tab />CommonModule,
+            <br /><Tab /><Tab />CustomersRoutingModule
+            <br /><Tab />],
+            <br /><Tab />declarations: [CustomerListComponent]
             <br />})
             <br />
             <br />export class LazyLoadingModule { }
@@ -50,15 +50,15 @@
             import { LazyLoadingComponent } from './lazy-loading/lazy-loading.component';
             <br />
             <br />const routes: Routes = [
-            <br />&nbsp;&nbsp;{
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;path: '',
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;component: LazyLoadingComponent
-            <br />&nbsp;&nbsp;}
+            <br /><Tab />{
+            <br /><Tab /><Tab />path: '',
+            <br /><Tab /><Tab />component: LazyLoadingComponent
+            <br /><Tab />}
             <br />];
             <br />
             <br />@NgModule({
-            <br />&nbsp;&nbsp;imports: [RouterModule.forChild(routes)],
-            <br />&nbsp;&nbsp;exports: [RouterModule]
+            <br /><Tab />imports: [RouterModule.forChild(routes)],
+            <br /><Tab />exports: [RouterModule]
             <br />})
             <br />
             <br />export class LazyLoadingRoutingModule { }
@@ -81,13 +81,14 @@
         <hr />app-routing.module.ts：
         <div class="code-area">
           const routes: Routes = [
-          <br />&nbsp;&nbsp;...
-          <br />&nbsp;&nbsp;{
-          <br />&nbsp;&nbsp;&nbsp;&nbsp;path: 'lazyloading',
-          <br />&nbsp;&nbsp;&nbsp;&nbsp;
-          loadChildren: () => import('./lazy-loading/lazy-loading.module').then(mod => mod.LazyLoadingModule)
-          <br />&nbsp;&nbsp;},
-          <br />&nbsp;&nbsp;...
+          <br /><Tab />...
+          <br /><Tab />{
+          <br /><Tab /><Tab />path: 'lazyloading',
+          <br /><Tab /><Tab />
+          loadChildren: () =>
+          import('./lazy-loading/lazy-loading.module').then(mod => mod.LazyLoadingModule)
+          <br /><Tab />},
+          <br /><Tab />...
           <br />];
           <div class="copy" @click="copy">
             <img src="../../../assets/images/copy_icon.svg" />
@@ -101,11 +102,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({ article: Cons.article.ngLazLoading }),
   methods: {
     copy(event) {

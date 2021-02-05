@@ -140,9 +140,11 @@ a {
       color: #3a4750;
     }
     .header {
+      margin-bottom: 5px;
       font-size: 24px;
     }
     .sub-header {
+      margin-bottom: 5px;
       font-size: 20px;
     }
     .name {
@@ -153,6 +155,7 @@ a {
     }
     .code-area {
       position: relative;
+      margin-bottom: 8px;
       padding: 5px 8px;
       font-size: 16px;
       background-color: #eeeeee;

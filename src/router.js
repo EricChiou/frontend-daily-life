@@ -57,6 +57,8 @@ const Screen =
   () => import(/* webpackChunkName: "other" */ './views/other/article/Screen.vue');
 const Object =
   () => import(/* webpackChunkName: "other" */ './views/other/article/Object.vue');
+const Nginx =
+  () => import(/* webpackChunkName: "other" */ './views/other/article/Nginx.vue');
 
 Vue.use(Router);
 
@@ -208,6 +210,11 @@ export default new Router({
       path: Cons.article.object.link,
       name: Cons.article.object.name,
       component: Object,
+    },
+    {
+      path: Cons.article.nginx.link,
+      name: Cons.article.nginx.name,
+      component: Nginx,
     },
   ],
 });

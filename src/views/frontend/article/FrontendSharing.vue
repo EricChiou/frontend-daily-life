@@ -24,11 +24,11 @@
               <br />const subject = new Subject();
               <br />
               <br />export default {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;emit: (data) => subject.next(data),
+              <br /><Tab /><Tab />emit: (data) => subject.next(data),
               <span
                 class="comment"
               >// 呼叫此 function 觸發 Subject</span>
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;emitted: () => subject.asObservable()
+              <br /><Tab /><Tab />emitted: () => subject.asObservable()
               <span
                 class="comment"
               >// 訂閱此 function 監聽 Subject</span>
@@ -71,11 +71,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
     article: Cons.article.frontendSharing,
   }),

@@ -63,7 +63,7 @@
             <div class="code">
               @HostListener('window:click', ['$event.target'])
               <br>onClick(event: any) {
-              <br>&nbsp;&nbsp;console.log('被點擊的元素為：', event);
+              <br><Tab />console.log('被點擊的元素為：', event);
               <br>}
             </div>
             <div class="copy" @click="copy">
@@ -86,13 +86,13 @@
           <div class="code-area">
             <div class="code">
               constructor(
-              <br>&nbsp;&nbsp;private ele: ElementRef
+              <br><Tab />private ele: ElementRef
               <br>
               ) { }
               <br>
               <br>ngOnInit() {
-              <br>&nbsp;&nbsp;this.ele.nativeElement.querySelector('#id');
-              <br>&nbsp;&nbsp;this.ele.nativeElement.querySelectorAll('.className');
+              <br><Tab />this.ele.nativeElement.querySelector('#id');
+              <br><Tab />this.ele.nativeElement.querySelectorAll('.className');
               <br>}
             </div>
             <div class="copy" @click="copy">
@@ -187,11 +187,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({ article: Cons.article.ngNotebook }),
   methods: {
     copy(event) {
