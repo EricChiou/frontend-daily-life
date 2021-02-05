@@ -13,21 +13,19 @@
         <br />
         <div class="header">安裝 Nginx</div>
         <hr />
-        <div class="text">
-          <div class="code-area">
-            <div class="code">sudo apt-get update</div>
-            <div class="copy" @click="copy">
-              <img src="../../../assets/images/copy_icon.svg" />
-            </div>
+        <div class="code-area">
+          <div class="code">sudo apt-get update</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
           </div>
-          <div class="code-area">
-            <div class="code">sudo apt-get install nginx</div>
-            <div class="copy" @click="copy">
-              <img src="../../../assets/images/copy_icon.svg" />
-            </div>
-          </div>
-          <br />
         </div>
+        <div class="code-area">
+          <div class="code">sudo apt-get install nginx</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
+        <br />
         <div class="header">程式相關路徑</div>
         <hr />
         <div class="sub-header">config 路徑</div>
@@ -145,6 +143,47 @@
         <br />
         <div class="sub-header">其他注意事項</div>
         <div class="text">一個 port 同時只能有一個 server {} 監聽，多個 server {} 監聽會失效</div>
+        <br />
+        <div class="header">Nginx 指令</div>
+        <hr />
+        <div class="code-area">
+          <div class="code">sudo service nginx start</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
+        <div class="code-area">
+          <div class="code">sudo service nginx reload</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
+        <div class="code-area">
+          <div class="code">sudo service nginx restart</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
+        <br />
+        <div class="sub-header">如果沒有 service</div>
+        <div class="code-area">
+          <div class="code">sudo /etc/init.d/nginx start</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
+        <div class="code-area">
+          <div class="code">sudo /etc/init.d/nginx reload</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
+        <div class="code-area">
+          <div class="code">sudo /etc/init.d/nginx restart</div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
