@@ -1,20 +1,24 @@
 <template>
   <div id="article-name">
     <div class="article">
-      <div class="title">{{article.title}}</div>
+      <div class="title">{{ article.title }}</div>
       <BackToList></BackToList>
-      <div class="date">{{article.date}}</div>
-      <div class="summary">{{article.summary}}</div>
+      <div class="date">{{ article.date }}</div>
+      <div class="summary">{{ article.summary }}</div>
       <div class="under-line"></div>
       <div class="content">
-        <div class="sub-header">Title</div>
+        <div class="header">Title</div>
         <hr />
-        <div class="text">
-          <div class="code-area">
-            <div class="code">code</div>
-            <div class="copy" @click="copy">
-              <img src="../../../assets/images/copy_icon.svg" />
-            </div>
+        <div class="sub-header">Sub Title</div>
+        <div class="text"></div>
+        <div class="code-area">
+          <div class="code">
+            {<br />
+            <Tab />code <span class="comment">// comment</span><br />
+            }<br />
+          </div>
+          <div class="copy" @click="copy">
+            <img src="../../../assets/images/copy_icon.svg" />
           </div>
         </div>
       </div>
@@ -27,11 +31,12 @@ import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
+import Tab from '../../../components/tab/Tab.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
-    article: Cons.article.ArticleName
+    article: Cons.article.ArticleName,
   }),
   methods: {
     copy(event) {

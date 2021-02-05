@@ -59,6 +59,8 @@ const Object =
   () => import(/* webpackChunkName: "other" */ './views/other/article/Object.vue');
 const Nginx =
   () => import(/* webpackChunkName: "other" */ './views/other/article/Nginx.vue');
+const Supervisor =
+  () => import(/* webpackChunkName: "other" */ './views/other/article/Supervisor.vue');
 
 Vue.use(Router);
 
@@ -215,6 +217,11 @@ export default new Router({
       path: Cons.article.nginx.link,
       name: Cons.article.nginx.name,
       component: Nginx,
+    },
+    {
+      path: Cons.article.supervisor.link,
+      name: Cons.article.supervisor.name,
+      component: Supervisor,
     },
   ],
 });

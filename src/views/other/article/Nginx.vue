@@ -26,7 +26,7 @@
           </div>
         </div>
         <br />
-        <div class="header">程式相關路徑</div>
+        <div class="header">Nginx 安裝路徑</div>
         <hr />
         <div class="sub-header">config 路徑</div>
         <div class="code-area">

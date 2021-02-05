@@ -42,7 +42,7 @@
         <div class="text">
           <div class="code-area">
             <div class="code">
-              @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+TC&display=swap');
               <br />
               <br />html,
               <br />body {
@@ -51,7 +51,7 @@
               <br /><Tab />padding: 0;
               <br /><Tab />width: 100vw;
               <br /><Tab />height: 100vh;
-              <br /><Tab />font-family: 'Noto Sans TC', Helvetica, Arial, 'Microsoft JhengHei', Sans-Serif;
+              <br /><Tab />font-family: 'Inconsolata', 'Noto Sans TC', 'Microsoft JhengHei', Helvetica, Arial, Sans-Serif;
               <br /><Tab />overflow: auto;
               <br />}
             </div>

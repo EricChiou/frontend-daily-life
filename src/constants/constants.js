@@ -9,6 +9,15 @@ const articleCategory = {
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    supervisor: {
+      category: articleCategory.other,
+      title: '使用 Supervisor 程序管理工具',
+      date: '2021 / 02 / 05',
+      summary:
+        '在 Ubuntu 18.04 上安裝 Supervisor，以及其他相關設定',
+      link: '/other/supervisor',
+      name: 'supervisor',
+    },
     nginx: {
       category: articleCategory.other,
       title: '使用 Nginx 架設 http server',
