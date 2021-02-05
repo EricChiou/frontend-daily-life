@@ -16,7 +16,7 @@ export default {
       summary:
         '後端在開發的時候常常會聽到 PO、BO、DTO、VO 這些物件類型，一次搞清楚他們之間的區別是什麼',
       link: '/other/object',
-      name: 'object'
+      name: 'object',
     },
     screen: {
       category: articleCategory.other,
@@ -25,7 +25,7 @@ export default {
       summary:
         '介紹如何在 Linux 中安裝 Screen，以及各種指令操作',
       link: '/other/screen',
-      name: 'screen'
+      name: 'screen',
     },
     checkVariableType: {
       category: articleCategory.frontend,
@@ -34,7 +34,7 @@ export default {
       summary:
         '在判斷變數型別時常常會使用到 typeof 及 instanceof，因此在這說明 typeof 及 instanceof 的差別以及使用方法',
       link: '/frontend/checkVariableType',
-      name: 'checkVariableType'
+      name: 'checkVariableType',
     },
     frontendSharing: {
       category: articleCategory.frontend,
@@ -43,7 +43,7 @@ export default {
       summary:
         '有時會發生需要在非父子關係的元件之間進行溝通或數據交換，這時使用 Subject 來進行溝通會較方便',
       link: '/frontend/frontend-sharing',
-      name: 'frontend-sharing'
+      name: 'frontend-sharing',
     },
     rsa: {
       category: articleCategory.other,
@@ -52,7 +52,7 @@ export default {
       summary:
         '在 Ubuntu 18.04 上使用 openssl 產生 RSA 金鑰',
       link: '/other/rsa',
-      name: 'seo'
+      name: 'seo',
     },
     seo: {
       category: articleCategory.frontend,
@@ -61,7 +61,7 @@ export default {
       summary:
         '講解設定 SEO 時的各種注意事項，以及 SEO 的各種 tag',
       link: '/frontend/seo',
-      name: 'seo'
+      name: 'seo',
     },
     vueProps: {
       category: articleCategory.vue,
@@ -70,7 +70,7 @@ export default {
       summary:
         '介紹 Vue Props 用途及使用方法',
       link: '/vue/vue-props',
-      name: 'vueProps'
+      name: 'vueProps',
     },
     esLint: {
       category: articleCategory.frontend,
@@ -79,7 +79,7 @@ export default {
       summary:
         '記錄個人愛用的 ESLint 規則',
       link: '/frontend/eslint',
-      name: 'eslint'
+      name: 'eslint',
     },
     ngLazLoading: {
       category: articleCategory.angular,
@@ -88,7 +88,7 @@ export default {
       summary:
         '介紹 Angular 的 Lazy Loading 使用方法',
       link: '/angular/lazy-loading',
-      name: 'ng-lazy-loading'
+      name: 'ng-lazy-loading',
     },
     vueLazyLoading: {
       category: articleCategory.vue,
@@ -97,7 +97,7 @@ export default {
       summary:
         '利用 Vue 的異步組件功能及 Webpack 的分割程式碼功能達成 Vue 的 Lazy Loading',
       link: '/vue/lazy-loading',
-      name: 'vue-lazy-loading'
+      name: 'vue-lazy-loading',
     },
     reactPropsAndState: {
       category: articleCategory.react,
@@ -106,7 +106,7 @@ export default {
       summary:
         '介紹 React 中的 props 與 state，以及使用方法',
       link: '/react/props-state',
-      name: 'react-props-state'
+      name: 'react-props-state',
     },
     rwd: {
       category: articleCategory.frontend,
@@ -115,7 +115,7 @@ export default {
       summary:
         '解釋何謂響應式網頁設計(Responsive Web Design, RWD)，該怎麼設計 RWD，一般常見的規則是什麼',
       link: '/frontend/rwd',
-      name: 'rwd'
+      name: 'rwd',
     },
     htmlSetting: {
       category: articleCategory.frontend,
@@ -124,7 +124,7 @@ export default {
       summary:
         '記錄一些 html 中的設定，包括 <html> 及 <head> 內的 <base>、<meta> 等等',
       link: '/frontend/html-setting',
-      name: 'html-setting'
+      name: 'html-setting',
     },
     frontendTrend: {
       category: articleCategory.frontend,
@@ -133,7 +133,7 @@ export default {
       summary:
         '討論前端發展趨勢，以及對目前主流的三大框架 React、Angular2 及 Vue 之間做些簡單的對比和使用心得',
       link: '/frontend/frontend-trend',
-      name: 'frontend-trend'
+      name: 'frontend-trend',
     },
     jenkins: {
       category: articleCategory.other,
@@ -142,7 +142,7 @@ export default {
       summary:
         '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案',
       link: '/other/jenkins',
-      name: 'jenkins'
+      name: 'jenkins',
     },
     vueNotebook: {
       category: articleCategory.vue,
@@ -151,7 +151,7 @@ export default {
       summary:
         '記錄一些 Vue 常用到的指令及基本設定和寫法',
       link: '/vue/notebook',
-      name: 'vueNotebook'
+      name: 'vueNotebook',
     },
     reactNotebook: {
       category: articleCategory.react,
@@ -160,7 +160,7 @@ export default {
       summary:
         '記錄一些 React 常用到的指令及基本設定和寫法',
       link: '/react/notebook',
-      name: 'reactNotebook'
+      name: 'reactNotebook',
     },
     ngNotebook: {
       category: articleCategory.angular,
@@ -169,7 +169,7 @@ export default {
       summary:
         '記錄一些 Angular 常用到的指令及基本設定和寫法',
       link: '/angular/notebook',
-      name: 'ngNotebook'
+      name: 'ngNotebook',
     },
     frontendNotebook: {
       category: articleCategory.frontend,
@@ -178,7 +178,7 @@ export default {
       summary:
         '記錄一些常用或個人愛用的 HTML 及 CSS 設定',
       link: '/frontend/notebook',
-      name: 'frontendNotebook'
-    }
-  }
+      name: 'frontendNotebook',
+    },
+  },
 };

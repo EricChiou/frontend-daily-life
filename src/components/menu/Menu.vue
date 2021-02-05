@@ -22,7 +22,7 @@ import MenuList from './menu-components/MenuList.vue';
 import MenuFooter from './menu-components/MenuFooter.vue';
 
 export default {
-  components: { MenuList, MenuFooter }
+  components: { MenuList, MenuFooter },
 };
 </script>
 
