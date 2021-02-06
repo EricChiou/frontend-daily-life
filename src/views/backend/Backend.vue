@@ -27,13 +27,13 @@ export default {
   }),
   created() {
     Object.keys(Cons.article).forEach((key) => {
-      if (Cons.article[key].category === 'other') {
+      if (Cons.article[key].category === 'backend') {
         this.article.push(Cons.article[key]);
       }
     });
   },
   mounted() {
-    this.$store.commit('changeBackPageRoute', '/other');
+    this.$store.commit('changeBackPageRoute', '/backend');
   },
 };
 </script>

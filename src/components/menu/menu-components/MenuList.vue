@@ -13,7 +13,7 @@
       <router-link :to="{name:'vue'}">
         <li>Vue</li>
       </router-link>
-      <router-link :to="{name:'other'}">
+      <router-link :to="{name:'backend'}">
         <li>後端</li>
       </router-link>
       <router-link :to="{name:'recommend'}">

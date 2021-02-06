@@ -24,7 +24,7 @@ export default {
 
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 html,
 body {
@@ -161,7 +161,6 @@ a {
       background-color: #eeeeee;
       border-radius: 4px;
       .code {
-        font-family: 'Inconsolata', 'Noto Sans TC';
         white-space: nowrap;
         overflow: auto;
 
@@ -224,7 +223,8 @@ a {
   }
 }
 #app {
-  font-family: 'Inconsolata', 'Noto Sans TC', 'Microsoft JhengHei', Helvetica, Arial, Sans-Serif;
+  font-family: 'Inconsolata', 'Microsoft JhengHei', Arial, Helvetica, sans-serif,
+    monospace;
   .main {
     position: fixed;
     top: 0;

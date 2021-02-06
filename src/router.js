@@ -12,7 +12,7 @@ import Frontend from './views/frontend/Frontend.vue';
 import Angular from './views/angular/Angular.vue';
 import React from './views/react/React.vue';
 import VueView from './views/vue/Vue.vue';
-import Other from './views/other/Other.vue';
+import Backend from './views/backend/Backend.vue';
 // article
 // frontend
 const FrontendTrend =
@@ -48,19 +48,19 @@ const VueLazyLoading =
   () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueLazyLoading.vue');
 const VueProps =
   () => import(/* webpackChunkName: "vue" */ './views/vue/article/VueProps.vue');
-// other
+// backend
 const Jenkins =
-  () => import(/* webpackChunkName: "other" */ './views/other/article/Jenkins.vue');
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Jenkins.vue');
 const RSA =
-  () => import(/* webpackChunkName: "other" */ './views/other/article/RSA.vue');
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/RSA.vue');
 const Screen =
-  () => import(/* webpackChunkName: "other" */ './views/other/article/Screen.vue');
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Screen.vue');
 const Object =
-  () => import(/* webpackChunkName: "other" */ './views/other/article/Object.vue');
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Object.vue');
 const Nginx =
-  () => import(/* webpackChunkName: "other" */ './views/other/article/Nginx.vue');
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Nginx.vue');
 const Supervisor =
-  () => import(/* webpackChunkName: "other" */ './views/other/article/Supervisor.vue');
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Supervisor.vue');
 
 Vue.use(Router);
 
@@ -103,9 +103,9 @@ export default new Router({
       component: VueView,
     },
     {
-      path: '/other',
-      name: 'other',
-      component: Other,
+      path: '/backend',
+      name: 'backend',
+      component: Backend,
     },
     {
       path: '/recommend',
@@ -192,7 +192,7 @@ export default new Router({
       name: Cons.article.vueProps.name,
       component: VueProps,
     },
-    // other
+    // backend
     {
       path: Cons.article.jenkins.link,
       name: Cons.article.jenkins.name,

@@ -3,46 +3,46 @@ const articleCategory = {
   angular: 'angular',
   react: 'react',
   vue: 'vue',
-  other: 'other', // backend
+  backend: 'backend',
 };
 
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
     supervisor: {
-      category: articleCategory.other,
+      category: articleCategory.backend,
       title: '使用 Supervisor 程序管理工具',
       date: '2021 / 02 / 05',
       summary:
         '在 Ubuntu 18.04 上安裝 Supervisor，以及其他相關設定',
-      link: '/other/supervisor',
+      link: '/backend/supervisor',
       name: 'supervisor',
     },
     nginx: {
-      category: articleCategory.other,
+      category: articleCategory.backend,
       title: '使用 Nginx 架設 http server',
       date: '2021 / 02 / 05',
       summary:
         '在 Ubuntu 18.04 上安裝 Nginx 建立 http server，並使用轉址、Certbot 自動更新 SSL 憑證等功能',
-      link: '/other/nginx',
+      link: '/backend/nginx',
       name: 'nginx',
     },
     object: {
-      category: articleCategory.other,
+      category: articleCategory.backend,
       title: '何謂 PO、BO、DTO、VO',
       date: '2020 / 09 / 08',
       summary:
         '後端在開發的時候常常會聽到 PO、BO、DTO、VO 這些物件類型，一次搞清楚他們之間的區別是什麼',
-      link: '/other/object',
+      link: '/backend/object',
       name: 'object',
     },
     screen: {
-      category: articleCategory.other,
+      category: articleCategory.backend,
       title: '使用 Screen 在背景執行終端機',
       date: '2020 / 08 / 15',
       summary:
         '介紹如何在 Linux 中安裝 Screen，以及各種指令操作',
-      link: '/other/screen',
+      link: '/backend/screen',
       name: 'screen',
     },
     checkVariableType: {
@@ -64,12 +64,12 @@ export default {
       name: 'frontend-sharing',
     },
     rsa: {
-      category: articleCategory.other,
+      category: articleCategory.backend,
       title: 'RSA 金鑰',
       date: '2019 / 05 / 16',
       summary:
         '在 Ubuntu 18.04 上使用 openssl 產生 RSA 金鑰',
-      link: '/other/rsa',
+      link: '/backend/rsa',
       name: 'seo',
     },
     seo: {
@@ -154,12 +154,12 @@ export default {
       name: 'frontend-trend',
     },
     jenkins: {
-      category: articleCategory.other,
+      category: articleCategory.backend,
       title: 'Jenkins 各種相關設定',
       date: '2019 / 04 / 18',
       summary:
         '如何讓 Jenkins 在 Ubuntu 18.04 上取得 root 權限，如何讓 Jenkins 建置 Golang 專案',
-      link: '/other/jenkins',
+      link: '/backend/jenkins',
       name: 'jenkins',
     },
     vueNotebook: {
