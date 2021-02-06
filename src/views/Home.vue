@@ -14,14 +14,23 @@
           <span class="keyword" @click="quickSearch('SEO')">SEO</span>
         </div>
         <div class="search">
-          <input ref="search" type="text" placeholder="搜尋文章標題、摘要" @change="search" />
+          <input
+            ref="search"
+            type="text"
+            placeholder="搜尋文章標題、摘要"
+            @change="search"
+          />
         </div>
       </div>
-      <router-link v-for="content in article" :key="content.link" :to="content.link">
+      <router-link
+        v-for="content in article"
+        :key="content.link"
+        :to="content.link"
+      >
         <div class="article-list">
-          <h4>{{content.title}}</h4>
-          <div class="date">{{content.date}}</div>
-          <div class="summary">{{content.summary}}</div>
+          <h4>{{ content.title }}</h4>
+          <div class="date">{{ content.date }}</div>
+          <div class="summary">{{ content.summary }}</div>
         </div>
       </router-link>
     </div>
@@ -52,7 +61,7 @@ export default {
       this.article = [];
       if (keyword) {
         const word = keyword.toLowerCase();
-        Object.keys(Cons.article).forEach(key => {
+        Object.keys(Cons.article).forEach((key) => {
           if (
             Cons.article[key].title.toLowerCase().indexOf(word) > -1 ||
             Cons.article[key].title.toLowerCase().indexOf(word) > -1
@@ -62,7 +71,7 @@ export default {
         });
         this.setUrl(keyword);
       } else {
-        Object.keys(Cons.article).forEach(key => {
+        Object.keys(Cons.article).forEach((key) => {
           this.article.push(Cons.article[key]);
         });
         this.setUrl();
@@ -70,14 +79,18 @@ export default {
     },
     setUrl(keyword) {
       const search = keyword ? `?keyword=${keyword}` : '';
-      window.history.replaceState(null, null, `${window.location.href.split('?')[0]}${search}`);
+      window.history.replaceState(
+        null,
+        null,
+        `${window.location.href.split('?')[0]}${search}`
+      );
     },
   },
   mounted() {
     const search = window.location.href.split('?')[1];
     if (search) {
       const params = search.split('&');
-      params.forEach(param => {
+      params.forEach((param) => {
         const data = param.split('=');
         if (data.length === 2) {
           if (data[0] === 'keyword') {
