@@ -35,7 +35,7 @@
             <img src="../../../assets/images/copy_icon.svg" />
           </div>
         </div>
-        <div class="sub-header">預設 Nginx 網頁路徑</div>
+        <div class="sub-header">預設網頁放置路徑</div>
         <div class="code-area">
           <div class="code">cd /usr/share/nginx/html</div>
           <div class="copy" @click="copy">

@@ -4,11 +4,11 @@
       <router-link :to="{ name: 'about' }">
         <li>關於我</li>
       </router-link>
-      <span class="vertical-line"><Tab />|<Tab /></span>
+      <span class="vertical-line">&nbsp;|&nbsp;</span>
       <li>
         <a href="http://www.calicomoomoo.ml/entrance/" target="_blank">入口網站</a>
       </li>
-      <span class="vertical-line"><Tab />|<Tab /></span>
+      <span class="vertical-line"> | </span>
       <li>
         <a href="https://github.com/EricChiou/frontend-daily-life" target="_blank">
           <img src="../../../assets/images/github.png" width="20" height="20" />Github
@@ -20,11 +20,7 @@
 </template>
 
 <script>
-import Tab from '../../tab/Tab.vue';
-
-export default {
-  components: { Tab },
-};
+export default {};
 </script>
 
 <style scoped lang="scss">

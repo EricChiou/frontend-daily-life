@@ -61,6 +61,8 @@ const Nginx =
   () => import(/* webpackChunkName: "backend" */ './views/backend/article/Nginx.vue');
 const Supervisor =
   () => import(/* webpackChunkName: "backend" */ './views/backend/article/Supervisor.vue');
+const Ubuntu =
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Ubuntu.vue');
 
 Vue.use(Router);
 
@@ -222,6 +224,11 @@ export default new Router({
       path: Cons.article.supervisor.link,
       name: Cons.article.supervisor.name,
       component: Supervisor,
+    },
+    {
+      path: Cons.article.ubuntu.link,
+      name: Cons.article.ubuntu.name,
+      component: Ubuntu,
     },
   ],
 });

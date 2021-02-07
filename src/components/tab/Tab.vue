@@ -1,5 +1,5 @@
 <template>
-  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <span>&nbsp;&nbsp;</span>
 </template>
 <script>
 export default {

@@ -2,7 +2,7 @@
   <div id="about-me-container">
     <div class="title">關於我</div>
     <div class="content">
-      <iframe src="https://www.calicomoomoo.ml/about?color=#3a4750&fontSize=18px"></iframe>
+      <iframe :src="iframeUrl"></iframe>
     </div>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 export default {
   data: () => ({
-    mailTo: `mailto:miatlab@gmail.com?subject=${encodeURIComponent('Calico & MooMoo')}`,
+    iframeUrl: `https://www.calicomoomoo.ml/about?color=${encodeURIComponent('#3a4750')}&fontSize=18px`,
   }),
 };
 </script>

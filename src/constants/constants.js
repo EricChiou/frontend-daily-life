@@ -9,6 +9,15 @@ const articleCategory = {
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    ubuntu: {
+      category: articleCategory.backend,
+      title: 'Ubuntu 20.04 的後端服務器環境建置',
+      date: '2021 / 02 / 06',
+      summary:
+        '在 Ubuntu 20.04 上建立自己的後端服務器，並記錄各種常用指令。',
+      link: '/backend/ubuntu',
+      name: 'ubuntu',
+    },
     supervisor: {
       category: articleCategory.backend,
       title: '使用 Supervisor 程序管理工具',
