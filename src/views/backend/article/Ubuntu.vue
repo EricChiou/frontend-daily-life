@@ -56,10 +56,7 @@
         </CodeBlock>
         <br />
         <div class="sub-header">重啟服務</div>
-        <CodeBlock>
-          sudo /etc/init.d/ssh restart
-          <Comment>// SSH 服務要使用的 port</Comment><br />
-        </CodeBlock>
+        <CodeBlock>sudo /etc/init.d/ssh restart</CodeBlock>
         <br />
         <div class="header">Git</div>
         <hr />
@@ -83,47 +80,11 @@
         <hr />
         <div class="sub-header">安裝 Node.js</div>
         <CodeBlock>sudo apt-get install -y nodejs</CodeBlock>
-        <CodeBlock>
-          node -v <Comment>// 裝完後輸入 node -v 確認安裝成功及版本</Comment>
-        </CodeBlock>
+        <CodeBlock> node -v <Comment>// 裝完後輸入 node -v 確認安裝成功及版本</Comment> </CodeBlock>
         <br />
         <div class="sub-header">安裝 NPM</div>
         <CodeBlock>sudo apt-get install npm</CodeBlock>
-        <CodeBlock>
-          npm -v <Comment>// 裝完後輸入 npm -v 確認安裝成功及版本</Comment>
-        </CodeBlock>
-        <br />
-        <div class="header">Java</div>
-        <hr />
-        <div class="sub-header">安裝 openjdk</div>
-        <CodeBlock>sudo apt-get install openjdk-11-jdk</CodeBlock>
-        <CodeBlock>java -version <Comment>// 確認安裝</Comment></CodeBlock>
-        <br />
-        <div class="header">Jenkins</div>
-        <hr />
-        <div class="sub-header">安裝 Jenkins</div>
-        <CodeBlock>
-          wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |
-          sudo apt-key add -
-        </CodeBlock>
-        <CodeBlock>
-          sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
-          <br />
-          /etc/apt/sources.list.d/jenkins.list'
-        </CodeBlock>
-        <CodeBlock>sudo apt-get update</CodeBlock>
-        <CodeBlock>sudo apt-get install jenkins</CodeBlock>
-        <br />
-        <div class="sub-header">新增 Jenkins 權限</div>
-        <CodeBlock>sudo visudo</CodeBlock>
-        <br />
-        <div class="text">新增一行 "jenkins ALL=(ALL) NOPASSWD: ALL"：</div>
-        <CodeBlock>
-          # User privilege specification<br />
-          root ALL=(ALL:ALL) ALL<br />
-          jenkins ALL=(ALL) NOPASSWD: ALL
-        </CodeBlock>
-        <div class="text">按 Ctrl + O 存檔，Ctrl + X 離開</div>
+        <CodeBlock> npm -v <Comment>// 裝完後輸入 npm -v 確認安裝成功及版本</Comment> </CodeBlock>
         <br />
         <div class="header">Go</div>
         <hr />
@@ -132,9 +93,7 @@
         </div>
         <br />
         <div class="text">將下載的壓縮檔解壓縮至 /usr/local</div>
-        <CodeBlock>
-          sudo tar -C /usr/local -xzf go1.15.8.linux-amd64.tar.gz
-        </CodeBlock>
+        <CodeBlock> sudo tar -C /usr/local -xzf go1.15.8.linux-amd64.tar.gz </CodeBlock>
         <br />
         <div class="text">新增環境變數</div>
         <CodeBlock>sudo vim $HOME/.profile</CodeBlock>
@@ -150,6 +109,12 @@
           go version
           <Comment>// 確認安裝成功</Comment>
         </CodeBlock>
+        <br />
+        <div class="header">Java</div>
+        <hr />
+        <div class="sub-header">安裝 openjdk</div>
+        <CodeBlock>sudo apt-get install openjdk-11-jdk</CodeBlock>
+        <CodeBlock>java -version <Comment>// 確認安裝</Comment></CodeBlock>
         <br />
         <div class="header">MySQL</div>
         <hr />
@@ -185,6 +150,37 @@
           FLUSH PRIVILEGES;
           <Comment>// 重新讀取權限</Comment>
         </CodeBlock>
+        <br />
+        <div class="header">Jenkins</div>
+        <hr />
+        <div class="sub-header">安裝 Jenkins</div>
+        <CodeBlock>
+          wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+        </CodeBlock>
+        <CodeBlock>
+          sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+          <br />
+          /etc/apt/sources.list.d/jenkins.list'
+        </CodeBlock>
+        <CodeBlock>sudo apt-get update</CodeBlock>
+        <CodeBlock>sudo apt-get install jenkins</CodeBlock>
+        <br />
+        <div class="sub-header">新增 Jenkins 權限</div>
+        <CodeBlock>sudo visudo</CodeBlock>
+        <br />
+        <div class="text">新增一行 "jenkins ALL=(ALL) NOPASSWD: ALL"：</div>
+        <CodeBlock>
+          # User privilege specification<br />
+          root ALL=(ALL:ALL) ALL<br />
+          jenkins ALL=(ALL) NOPASSWD: ALL
+        </CodeBlock>
+        <div class="text">按 Ctrl + O 存檔，Ctrl + X 離開</div>
+        <br />
+        <div class="header">Supervisor</div>
+        <hr />
+        <div class="sub-header">安裝 Supervisor</div>
+        <CodeBlock>sudo apt-get install supervisor</CodeBlock>
+        <br />
       </div>
     </div>
   </div>
