@@ -2,7 +2,7 @@
   <div id="about-me-container">
     <div class="title">關於我</div>
     <div class="content">
-      <iframe :src="iframeUrl"></iframe>
+      <iframe ref="iframe" :src="iframeUrl"></iframe>
     </div>
   </div>
 </template>
@@ -12,6 +12,13 @@ export default {
   data: () => ({
     iframeUrl: `https://www.calicomoomoo.ml/about?color=${encodeURIComponent('#3a4750')}&fontSize=18px`,
   }),
+  created() {
+    window.onmessage = (event) => {
+      if (event.data.id === 'about') {
+        this.$refs.iframe.style.height = `${event.data.height}px`;
+      }
+    };
+  },
 };
 </script>
 
@@ -29,7 +36,6 @@ export default {
       border: none;
       width: 640px;
       max-width: 100%;
-      min-height: calc(100vh - 82px);
 
       @media only screen and (max-width: 767px) {
         min-height: 100vh;
