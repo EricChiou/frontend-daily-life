@@ -15,7 +15,7 @@ export default {
   created() {
     window.onmessage = (event) => {
       if (event.data.id === 'about') {
-        this.$refs.iframe.style.height = `${event.data.height}px`;
+        this.$refs.iframe.style.height = `${event.data.height + 10}px`;
       }
     };
   },
