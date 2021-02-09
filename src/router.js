@@ -63,6 +63,8 @@ const Supervisor =
   () => import(/* webpackChunkName: "backend" */ './views/backend/article/Supervisor.vue');
 const Ubuntu =
   () => import(/* webpackChunkName: "backend" */ './views/backend/article/Ubuntu.vue');
+const Postfix =
+  () => import(/* webpackChunkName: "backend" */ './views/backend/article/Postfix.vue');
 
 Vue.use(Router);
 
@@ -229,6 +231,11 @@ export default new Router({
       path: Cons.article.ubuntu.link,
       name: Cons.article.ubuntu.name,
       component: Ubuntu,
+    },
+    {
+      path: Cons.article.postfix.link,
+      name: Cons.article.postfix.name,
+      component: Postfix,
     },
   ],
 });

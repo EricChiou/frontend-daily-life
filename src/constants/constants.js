@@ -9,12 +9,21 @@ const articleCategory = {
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    postfix: {
+      category: articleCategory.backend,
+      title: 'Postfix 安裝建置',
+      date: '2021 / 02 / 09',
+      summary:
+        '使用 Postfix 在 Ubuntu 20.04 上建立自己的 Email Server 寄送郵件',
+      link: '/backend/postfix',
+      name: 'postfix',
+    },
     ubuntu: {
       category: articleCategory.backend,
       title: 'Ubuntu 20.04 的後端服務器環境建置',
       date: '2021 / 02 / 06',
       summary:
-        '在 Ubuntu 20.04 上建立自己的後端服務器，並記錄各種常用指令。',
+        '在 Ubuntu 20.04 上建立自己的後端服務器，並記錄各種常用指令',
       link: '/backend/ubuntu',
       name: 'ubuntu',
     },

@@ -1,7 +1,7 @@
 <template>
   <div class="code-area">
     <div class="code"><slot></slot></div>
-    <div :v-if="copy" class="copy" @click="doCopy">
+    <div v-if="copy" class="copy" @click="doCopy">
       <img src="../../assets/images/copy_icon.svg" />
     </div>
   </div>

@@ -11,7 +11,7 @@
         <hr />
         <div class="sub-header">Sub Title</div>
         <div class="text">text</div>
-        <CodeBlock @copy="true">
+        <CodeBlock :copy="true">
           {<br />
           <Tab />code <Comment>// comment</Comment><br />
           }<br />

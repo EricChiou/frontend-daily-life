@@ -181,6 +181,15 @@
         <div class="sub-header">安裝 Supervisor</div>
         <CodeBlock>sudo apt-get install supervisor</CodeBlock>
         <br />
+        <div class="header">Postfix</div>
+        <hr />
+        <div class="sub-header">安裝 Postfix</div>
+        <CodeBlock>sudo apt-get install postfix</CodeBlock>
+        <br />
+        <div class="sub-header">注意事項</div>
+        <div class="text">
+          安裝 Postfix 時可直接在安裝過程中設定一些事項，因此建議從本機安裝，不要使用遠端連線安裝。
+        </div>
       </div>
     </div>
   </div>
