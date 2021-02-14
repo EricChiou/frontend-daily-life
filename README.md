@@ -3,7 +3,7 @@ Demo: https://www.calicomoomoo.ml/frontend-daily-life/
 
 ## Project setup
 ```
-npm install
+npm install --ignore-scripts
 ```
 
 ### Compiles and hot-reloads for development

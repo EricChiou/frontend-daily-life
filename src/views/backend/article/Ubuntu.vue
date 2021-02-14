@@ -12,6 +12,12 @@
         <div class="sub-header">查看有被監聽的 port</div>
         <CodeBlock>sudo lsof -i -P -n | grep LISTEN</CodeBlock>
         <br />
+        <div class="sub-header">查看程序的資源使用率（以記憶體使用率排序）</div>
+        <CodeBlock>ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head</CodeBlock>
+        <br />
+        <div class="sub-header">查看記憶體使用量（以 MB 為單位）</div>
+        <CodeBlock>free -m</CodeBlock>
+        <br />
         <div class="header">完整移除 apache2</div>
         <hr />
         <CodeBlock>
