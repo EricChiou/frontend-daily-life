@@ -46,13 +46,9 @@
               <br />
               <br />html,
               <br />body {
-              <br /><Tab />position: relative;
               <br /><Tab />margin: 0;
               <br /><Tab />padding: 0;
-              <br /><Tab />width: 100vw;
-              <br /><Tab />height: 100vh;
               <br /><Tab />font-family: 'Inconsolata', 'Microsoft JhengHei', Arial, Helvetica, sans-serif, monospace;
-              <br /><Tab />overflow: auto;
               <br />}
             </div>
             <div class="copy" @click="copy">
