@@ -10,7 +10,7 @@
 <script>
 export default {
   data: () => ({
-    iframeUrl: `https://www.calicomoomoo.ml/about?color=${encodeURIComponent('#3a4750')}&fontSize=18px`,
+    iframeUrl: `https://www.calicomoomoo.com/about?color=${encodeURIComponent('#3a4750')}&fontSize=18px`,
   }),
   created() {
     window.onmessage = (event) => {
