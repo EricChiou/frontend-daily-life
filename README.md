@@ -1,5 +1,5 @@
 # frontend-daily-life
-Demo: https://www.calicomoomoo.ml/frontend-daily-life/
+Demo: https://www.calicomoomoo.com/frontend-daily-life/
 
 ## Project setup
 ```
