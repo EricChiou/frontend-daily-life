@@ -58,7 +58,7 @@
           <div class="code">
             server {<br />
             <Tab />listen<Tab />443 ssl; <span class="comment">// 監聽 https 443 port</span><br />
-            <Tab />server_name<Tab />www.calicomoomoo.ml;
+            <Tab />server_name<Tab />www.calicomoomoo.com;
             <span class="comment">// server 名稱</span>
             <br />
             <br />
@@ -101,7 +101,7 @@
           <div class="code">
             server {<br />
             <Tab />listen<Tab />80; <span class="comment">// 監聽 http 80 port</span><br />
-            <Tab />server_name<Tab />www.calicomoomoo.ml;<br />
+            <Tab />server_name<Tab />www.calicomoomoo.com;<br />
             <Tab />return 301<Tab />https://$host$request_uri;
             <span class="comment">// 自動轉到 https 並在後面帶一樣的 url</span><br />
             }
@@ -116,7 +116,7 @@
           <div class="code">
             server {<br />
             <Tab />listen<Tab />8080 ssl; <span class="comment">// 監聽 https 8080 port</span><br />
-            <Tab />server_name<Tab />www.calicomoomoo.ml;<br />
+            <Tab />server_name<Tab />www.calicomoomoo.com;<br />
             <br />
             <Tab />ssl_certificate<Tab />/path/to/your/key;<br />
             <Tab />ssl_certificate_key<Tab />/path/to/your/key;<br />

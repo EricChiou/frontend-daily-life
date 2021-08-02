@@ -6,7 +6,7 @@
       </router-link>
       <span class="vertical-line">&nbsp;|&nbsp;</span>
       <li>
-        <a href="http://www.calicomoomoo.ml/entrance/" target="_blank">入口網站</a>
+        <a href="http://www.calicomoomoo.com/entrance/" target="_blank">入口網站</a>
       </li>
       <span class="vertical-line"> | </span>
       <li>
