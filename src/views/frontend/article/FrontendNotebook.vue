@@ -63,26 +63,26 @@
           <div class="code-area">
             <div class="code">
               @mixin breakpoint($width) {
-              <br /><Tab />@if $width==xl {
-              <br /><Tab /><Tab />@media only screen and (max-width: 1200px) {
-              <br /><Tab /><Tab /><Tab />@content;
-              <br /><Tab /><Tab />}
-              <br /><Tab />}
-              <br />
-              <br /><Tab />@else if $width==l {
-              <br /><Tab /><Tab />@media only screen and (max-width: 1023px) {
+              <br /><Tab />@if $width==l {
+              <br /><Tab /><Tab />@media only screen and (max-width: 1440px) {
               <br /><Tab /><Tab /><Tab />@content;
               <br /><Tab /><Tab />}
               <br /><Tab />}
               <br />
               <br /><Tab />@else if $width==m {
-              <br /><Tab /><Tab />@media only screen and (max-width: 767px) {
+              <br /><Tab /><Tab />@media only screen and (min-width: 1240px) and (max-width: 1439px) {
               <br /><Tab /><Tab /><Tab />@content;
               <br /><Tab /><Tab />}
               <br /><Tab />}
               <br />
               <br /><Tab />@else if $width==s {
-              <br /><Tab /><Tab />@media only screen and (max-width: 479px) {
+              <br /><Tab /><Tab />@media only screen and (min-width: 600px) and (max-width: 1239px) {
+              <br /><Tab /><Tab /><Tab />@content;
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
+              <br />
+              <br /><Tab />@else if $width==xs {
+              <br /><Tab /><Tab />@media only screen and (max-width: 599px) {
               <br /><Tab /><Tab /><Tab />@content;
               <br /><Tab /><Tab />}
               <br /><Tab />}
