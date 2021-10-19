@@ -30,7 +30,7 @@
           </div>
           <br>RWD 設計最重要的就是 480px、768px、1024px 這三個寬度。
           <br>當畫面寬度是 1024px 以上時，我們就視為桌面電腦，會以使用者是操作電腦的前提下去設計 UI。
-          <br>而介於 768px ~ 1024px 之間是視為平板，480px ~ 768px 是大尺寸手機或小型平板。
+          <br>而介於 768px ~ 1023px 之間是視為平板，481px ~ 767px 是大尺寸手機或小型平板。
           <br>一般常見的手機則是介於 320px ~ 480px 之間。
           <br>還有一些比較不常見的寬度分野，像是 720px、900px、1200px 等，可以視情況決定要不要針對這些寬度做設計。
           <br>
@@ -43,26 +43,24 @@
           <br>
           <br>~ 480px
           <div class="code-area">
-            <div class="code">@media only screen and (max-width: 479px)</div>
+            <div class="code">@media only screen and (max-width: 480px)</div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg">
             </div>
           </div>
-          <br>480px ~ 768px
+          <br>481px ~ 767px
           <div class="code-area">
             <div class="code">
-              @media only screen and (min-width: 480px)
-              <br>@media only screen and (max-width: 767px)
+              @media only screen and (min-width: 481px) and (max-width: 767px)
             </div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg">
             </div>
           </div>
-          <br>768px ~ 1024px
+          <br>768px ~ 1023px
           <div class="code-area">
             <div class="code">
-              @media only screen and (min-width: 768px)
-              <br>@media only screen and (max-width: 1023px)
+              @media only screen and (min-width: 768px) and (max-width: 1023px)
             </div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg">
