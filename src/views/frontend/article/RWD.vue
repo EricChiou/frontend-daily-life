@@ -52,9 +52,16 @@
               <img src="../../../assets/images/copy_icon.svg" />
             </div>
           </div>
-          <br />600px ~ 1239px
+          <br />600px ~ 904px
           <div class="code-area">
-            <div class="code">@media only screen and (min-width: 600px) and (max-width: 1239px)</div>
+            <div class="code">@media only screen and (min-width: 600px) and (max-width: 904px)</div>
+            <div class="copy" @click="copy">
+              <img src="../../../assets/images/copy_icon.svg" />
+            </div>
+          </div>
+          <br />905px ~ 1239px
+          <div class="code-area">
+            <div class="code">@media only screen and (min-width: 905px) and (max-width: 1239px)</div>
             <div class="copy" @click="copy">
               <img src="../../../assets/images/copy_icon.svg" />
             </div>

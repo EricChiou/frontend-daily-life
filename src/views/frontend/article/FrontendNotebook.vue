@@ -75,8 +75,14 @@
               <br /><Tab /><Tab />}
               <br /><Tab />}
               <br />
+              <br /><Tab />@else if $width==ms {
+              <br /><Tab /><Tab />@media only screen and (min-width: 905px) and (max-width: 1239px) {
+              <br /><Tab /><Tab /><Tab />@content;
+              <br /><Tab /><Tab />}
+              <br /><Tab />}
+              <br />
               <br /><Tab />@else if $width==s {
-              <br /><Tab /><Tab />@media only screen and (min-width: 600px) and (max-width: 1239px) {
+              <br /><Tab /><Tab />@media only screen and (min-width: 600px) and (max-width: 904px) {
               <br /><Tab /><Tab /><Tab />@content;
               <br /><Tab /><Tab />}
               <br /><Tab />}
