@@ -105,8 +105,10 @@
         <div class="text">
           <div class="code-area">
             <div class="code">
-              $colors: (black: (base:#000000, light:#454545),
-              <br /><Tab />white:(base:#ffffff, dark:#dddddd));
+              $colors: ( //
+              <br /><Tab />black: (base: #000000, light: #454545),
+              <br /><Tab />white: (base: #ffffff, dark: #dddddd),
+              <br />);
               <br />
               <br />@function theme($color, $type: 'base', $map: $colors) {
               <br /><Tab />@if (map-has-key($map, $color)) {
