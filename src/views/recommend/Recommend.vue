@@ -156,6 +156,13 @@
             <img src="../../assets/images/link_icon.png" height="12" />
           </a>
           <br />各種免費或付費的 ICON
+          <br />
+          <br />
+          <a href="https://icones.js.org/" target="_blank">
+            Icônes
+            <img src="../../assets/images/link_icon.png" height="12" />
+          </a>
+          <br />整理了幾乎所有免費的 ICON
         </div>
       </div>
       <div class="sub-title">免費圖片</div>
