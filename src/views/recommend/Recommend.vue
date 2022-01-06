@@ -162,7 +162,7 @@
             Icônes
             <img src="../../assets/images/link_icon.png" height="12" />
           </a>
-          <br />整理了幾乎所有免費的 ICON
+          <br />整理了幾乎所有免費的 ICON，並且可以幫你打包成 css 檔來引入
         </div>
       </div>
       <div class="sub-title">免費圖片</div>
