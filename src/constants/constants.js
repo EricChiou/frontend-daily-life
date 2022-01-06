@@ -9,6 +9,15 @@ const articleCategory = {
 export default {
   // If add a new article, remember to add the new router path in router.js too.
   article: {
+    deepCopyAndCompareData: {
+      category: articleCategory.frontend,
+      title: '實作 Deep Copy 和 Compare Data',
+      date: '2022 / 01 / 06',
+      summary:
+        '實作較有效率的 deep copy 及 compare data 確認資料是否有被修改，常用於表單元件',
+      link: '/frontend/deep-copy-and-compare-data',
+      name: 'deep-copy-and-compare-data',
+    },
     postfix: {
       category: articleCategory.backend,
       title: 'Postfix 安裝建置',
@@ -69,8 +78,8 @@ export default {
       date: '2020 / 07 / 28',
       summary:
         '在判斷變數型別時常常會使用到 typeof 及 instanceof，因此在這說明 typeof 及 instanceof 的差別以及使用方法',
-      link: '/frontend/checkVariableType',
-      name: 'checkVariableType',
+      link: '/frontend/check-variable-type',
+      name: 'check-variable-type',
     },
     frontendSharing: {
       category: articleCategory.frontend,

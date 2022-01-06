@@ -31,6 +31,8 @@ const FrontendSharing =
   () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/FrontendSharing.vue');
 const CheckVariableType =
   () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/CheckVariableType.vue');
+const DeepCopyAndCompareData =
+  () => import(/* webpackChunkName: "frontend" */ './views/frontend/article/DeepCopyAndCompareData.vue');
 // angular
 const NgNotebook =
   () => import(/* webpackChunkName: "angular" */ './views/angular/article/NgNotebook.vue');
@@ -157,6 +159,11 @@ export default new Router({
       path: Cons.article.checkVariableType.link,
       name: Cons.article.checkVariableType.name,
       component: CheckVariableType,
+    },
+    {
+      path: Cons.article.deepCopyAndCompareData.link,
+      name: Cons.article.deepCopyAndCompareData.name,
+      component: DeepCopyAndCompareData,
     },
     // angular
     {

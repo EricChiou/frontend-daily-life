@@ -20,8 +20,8 @@
               <br />'comma-dangle': ['error', 'always-multiline'],
               <br />
               <br />
-              <span class="comment">// code 單行最大長度建議為 100 個字</span>
-              <br />'max-len': ['error', { 'code': 100 }],
+              <span class="comment">// code 單行最大長度建議為 120 個字</span>
+              <br />'max-len': ['error', { 'code': 120 }],
               <br />
               <br />
               <span class="comment">// 單檔最大行數限制為 500 行，建議範圍為 100 ~ 500</span>
