@@ -42,13 +42,15 @@
         <div class="text">
           <div class="code-area">
             <div class="code">
-              @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
               <br />
               <br />html,
               <br />body {
               <br /><Tab />margin: 0;
               <br /><Tab />padding: 0;
-              <br /><Tab />font-family: 'Inconsolata', 'Microsoft JhengHei', Arial, Helvetica, sans-serif, monospace;
+              <br /><Tab />font-family: 'Noto Sans Mono', monospace;
+              <br /><Tab />font-family: 'Noto Sans TC', sans-serif;
+              <br /><Tab />font-family: 'Noto Sans SC', sans-serif;
               <br />}
             </div>
             <div class="copy" @click="copy">
