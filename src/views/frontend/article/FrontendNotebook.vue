@@ -42,13 +42,13 @@
         <div class="text">
           <div class="code-area">
             <div class="code">
-              @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;800&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400;700&family=Noto+Sans+TC:wght@100;400;700&display=swap');
               <br />
               <br />html,
               <br />body {
               <br /><Tab />margin: 0;
               <br /><Tab />padding: 0;
-              <br /><Tab />font-family: 'Noto Sans Mono', 'Microsoft JhengHei', Arial, Helvetica, sans-serif, monospace;
+              <br /><Tab />font-family: 'Noto Sans Mono', 'Noto Sans TC', 'Microsoft JhengHei', Helvetica, Arial, monospace, sans-serif;
               <br />}
             </div>
             <div class="copy" @click="copy">
