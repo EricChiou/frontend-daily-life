@@ -120,7 +120,7 @@ export default {
     esLint: {
       category: articleCategory.frontend,
       title: 'ESLint 筆記本',
-      date: '2019 / 05 / 07',
+      date: '2023 / 03 / 08',
       summary:
         '記錄個人愛用的 ESLint 規則',
       link: '/frontend/eslint',

@@ -52,8 +52,12 @@
               <br />'quotes': ['error', 'single'],
               <br />
               <br />
-              <span class="comment">// Function 後的括號不要有空格</span>
-              <br />'space-before-function-paren': ['error', 'never'],
+              <span class="comment">// Function 後的括號是否要有空格</span>
+              <br />'space-before-function-paren': ['error', {
+              <br /><Tab />anonymous: 'never',
+              <br /><Tab />named: 'never',
+              <br /><Tab />asyncArrow: 'always',
+              <br />}],
               <br />
               <br />
               <span class="comment">// 不要有 tab, 用空格取代 tab</span>
@@ -80,11 +84,12 @@
 <script>
 import Cons from '../../../constants/constants';
 import Clipboard from '../../../util/clipboard';
+import Tab from '../../../components/tab/Tab.vue';
 
 import BackToList from '../../../components/backtolist/BackToList.vue';
 
 export default {
-  components: { BackToList },
+  components: { BackToList, Tab },
   data: () => ({
     article: Cons.article.esLint,
   }),
